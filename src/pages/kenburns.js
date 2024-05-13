@@ -17,7 +17,7 @@ const Kenburns = () => {
       {/* Services Section */}
       <ServicesComponent />
       {/* !Services Section */}
-      <Drops />
+      {/* <Drops /> */}
       {/* Investor Section */}
       <WhyChooseUsComponent />
       {/* !Investor Section */}
