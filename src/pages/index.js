@@ -24,11 +24,12 @@ const Index = () => {
           <div className="container">
             <div className="content">
               <h2 className="fn_title" title="Neoh">
-                Neoh
+                Node
               </h2>
+              <h2>Prop Tech</h2>
               <p className="fn_desc fn_animated_text">
-                The collection built by and runby codeefly. Together we are
-                strong than ever.
+                Immerse yourself in cutting-edge technologies and services that
+                are molding the future of property investment and management.
               </p>
             </div>
           </div>

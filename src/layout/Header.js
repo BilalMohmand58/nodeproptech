@@ -25,7 +25,7 @@ const Header = () => {
         <div className="nav_content">
           <div className="nav_menu">
             <ul>
-              <li className="menu-item menu-item-has-children">
+              {/* <li className="menu-item menu-item-has-children">
                 <a
                   href="#"
                   onClick={(e) => {
@@ -60,6 +60,11 @@ const Header = () => {
                     </Link>
                   </li>
                 </ul>
+              </li> */}
+              <li className="menu-item">
+                <Link legacyBehavior href="/">
+                  Home
+                </Link>
               </li>
               <li className="menu-item">
                 <Link legacyBehavior href="/about">
@@ -69,6 +74,11 @@ const Header = () => {
               <li className="menu-item">
                 <Link legacyBehavior href="/blog">
                   Blog
+                </Link>
+              </li>
+              <li>
+                <Link legacyBehavior href="/product">
+                  Product
                 </Link>
               </li>
               <li className="menu-item">
@@ -118,28 +128,28 @@ const Header = () => {
             <div className="neoh_fn_social_list">
               <ul>
                 <li>
-                  <a href="#">
+                  <a href="https://twitter.com/TheNodePropTech">
                     <i className="fn-icon-twitter" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.facebook.com/TheNodePropTech">
                     <i className="fn-icon-facebook" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.instagram.com/node.proptech/">
                     <i className="fn-icon-instagram" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="fn-icon-pinterest" />
+                  <a href="https://www.linkedin.com/company/nodeproptech">
+                    <i className="fn-icon-linkedin" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="fn-icon-behance" />
+                  <a href="https://linktr.ee/nodeproptech">
+                    <i className="fn-icon-copy" />
                   </a>
                 </li>
               </ul>
