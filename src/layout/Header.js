@@ -3,7 +3,7 @@ import { Fragment, useState } from "react";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
-  const [homeToggle, setHomeToggle] = useState(false);
+  // const [homeToggle, setHomeToggle] = useState(false);
   return (
     <Fragment>
       {/* Right Navigation */}
@@ -145,11 +145,6 @@ const Header = () => {
                 <li>
                   <a href="https://www.linkedin.com/company/nodeproptech">
                     <i className="fn-icon-linkedin" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://linktr.ee/nodeproptech">
-                    <i className="fn-icon-copy" />
                   </a>
                 </li>
               </ul>

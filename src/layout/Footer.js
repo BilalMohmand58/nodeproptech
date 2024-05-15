@@ -38,28 +38,23 @@ const Footer = () => {
               <div className="neoh_fn_social_list">
                 <ul>
                   <li>
-                    <a href="#">
+                    <a href="https://twitter.com/TheNodePropTech">
                       <i className="fn-icon-twitter" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://www.facebook.com/TheNodePropTech">
                       <i className="fn-icon-facebook" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://www.instagram.com/node.proptech/">
                       <i className="fn-icon-instagram" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
-                      <i className="fn-icon-pinterest" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fn-icon-behance" />
+                    <a href="https://www.linkedin.com/company/nodeproptech">
+                      <i className="fn-icon-linkedin" />
                     </a>
                   </li>
                 </ul>

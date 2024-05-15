@@ -7,28 +7,29 @@ const Drops = () => {
   const [data, setData] = useState({ img: "", title: "" });
   const dropData = [
     {
-      img: "img/drops/1.jpg",
-      title: "Neoh #4588",
+      img: "img/drops/1.jpeg",
+      title: "Blockchain",
+      dec: "Our blockchain technology ensures transparency, security, and efficiency in real estate transactions, reducing fraud and optimizing property records.",
     },
     {
-      img: "img/drops/2.jpg",
-      title: "Neoh #4587",
+      img: "img/drops/2.jpeg",
+      title: "IOT (Internet of Things)",
+      dec: "We offer smart solutions for property management, enhancing operational efficiency, reducing costs, and providing a seamless tenant experience",
     },
     {
-      img: "img/drops/3.jpg",
-      title: "Neoh #4586",
+      img: "img/drops/3.jpeg",
+      title: "FinTech",
+      dec: "NodePropTech combines financial technology and real estate to empower investors with sustainable and profitable choices, redefining how real estate is financed and managed.",
     },
     {
-      img: "img/drops/4.jpg",
-      title: "Neoh #4585",
+      img: "img/drops/4.jpeg",
+      title: "PropTech",
+      dec: "Our PropTech solutions simplify property transactions, making buying, selling, and managing properties more accessible and efficient for everyone",
     },
     {
-      img: "img/drops/5.jpg",
-      title: "Neoh #4584",
-    },
-    {
-      img: "img/drops/6.jpg",
-      title: "Neoh #4583",
+      img: "img/drops/5.png",
+      title: "Sustainable Lifestyle",
+      dec: "We promote eco-friendly practices in real estate, supporting sustainability goals and reducing the environmental footprint of properties.",
     },
   ];
 
@@ -37,7 +38,7 @@ const Drops = () => {
     setToggle(true);
   };
 
-  const { img, title } = data;
+  const { img, title, dec } = data;
 
   return (
     <Fragment>
@@ -45,6 +46,7 @@ const Drops = () => {
         open={toggle}
         close={() => setToggle(false)}
         img={img}
+        dec={dec}
         title={title}
       />
       {/* Drops Section */}
@@ -64,120 +66,111 @@ const Drops = () => {
               <li>
                 <div
                   className="item"
-                  data-modal-image="img/drops/1.jpg"
-                  data-modal-title="Neoh #4588"
-                  data-modal-description="Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit amet facilisis massa laoreet. Integer mollis nec sapien eu lacinia."
+                  data-modal-image="img/drops/1.jpeg"
+                  data-modal-title="Blockchain"
+                  data-modal-description="Our blockchain technology ensures transparency, security, and efficiency in real estate transactions, reducing fraud and optimizing property records.."
                   data-modal-opensea-url="#"
                   data-modal-discord-url=""
                 >
                   <div className="img_holder">
-                    <img src="img/drops/1.jpg" alt="" />
+                    <img src="img/drops/1.jpeg" alt="" />
                     <a className="full_link" onClick={() => onClick(1)} />
                   </div>
-                  <div className="title_holder">
-                    <h3 className="fn_title">
-                      <a onClick={() => onClick(1)}>Neoh #4588</a>
-                    </h3>
+
+                  <div className="title_holder" style={{ textAlign: "center" }}>
+                    <h3 className="fn_title">Blockchain</h3>
+                    <div className="buttons">
+                      <a
+                        onClick={() => onClick(4)}
+                        className="neoh_fn_button only_text"
+                        style={{ display: "inline-block", marginTop: "20px" }}
+                      >
+                        <span className="text">Read More</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </li>
               <li>
                 <div
                   className="item"
-                  data-modal-image="img/drops/2.jpg"
-                  data-modal-title="Neoh #4587"
-                  data-modal-description="Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit amet facilisis massa laoreet. Integer mollis nec sapien eu lacinia."
+                  data-modal-image="img/drops/2.jpeg"
+                  data-modal-title="IOT (Internet of Things)"
+                  data-modal-description="We offer smart solutions for property management, enhancing operational efficiency, reducing costs, and providing a seamless tenant experience.."
                   data-modal-opensea-url=""
                   data-modal-discord-url="#"
                 >
                   <div className="img_holder">
-                    <img src="img/drops/2.jpg" alt="" />
+                    <img src="img/drops/2.jpeg" alt="" />
                     <a onClick={() => onClick(2)} className="full_link" />
                   </div>
-                  <div className="title_holder">
-                    <h3 className="fn_title">
-                      <a onClick={() => onClick(2)}>Neoh #4587</a>
-                    </h3>
+                  <div className="title_holder" style={{ textAlign: "center" }}>
+                    <h3 className="fn_title">IOT (Internet of Things)</h3>
+                    <div className="buttons">
+                      <a
+                        onClick={() => onClick(2)}
+                        className="neoh_fn_button only_text"
+                        style={{ display: "inline-block", marginTop: "20px" }}
+                      >
+                        <span className="text">Read More</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </li>
               <li>
                 <div
                   className="item"
-                  data-modal-image="img/drops/3.jpg"
-                  data-modal-title="Neoh #4586"
-                  data-modal-description="Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit amet facilisis massa laoreet. Integer mollis nec sapien eu lacinia."
+                  data-modal-image="img/drops/3.jpeg"
+                  data-modal-title="FinTech"
+                  data-modal-description="NodePropTech combines financial technology and real estate to empower investors with sustainable and profitable choices, redefining how real estate is financed and managed.."
                   data-modal-opensea-url="#"
                   data-modal-discord-url=""
                 >
                   <div className="img_holder">
-                    <img src="img/drops/3.jpg" alt="" />
+                    <img src="img/drops/3.jpeg" alt="" />
                     <a onClick={() => onClick(3)} className="full_link" />
                   </div>
-                  <div className="title_holder">
-                    <h3 className="fn_title">
-                      <a onClick={() => onClick(3)}>Neoh #4586</a>
-                    </h3>
+
+                  <div className="title_holder" style={{ textAlign: "center" }}>
+                    <h3 className="fn_title">FinTech</h3>
+                    <div className="buttons">
+                      <a
+                        onClick={() => onClick(3)}
+                        className="neoh_fn_button only_text"
+                        style={{ display: "inline-block", marginTop: "20px" }}
+                      >
+                        <span className="text">Read More</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </li>
               <li>
                 <div
                   className="item"
-                  data-modal-image="img/drops/4.jpg"
-                  data-modal-title="Neoh #4585"
-                  data-modal-description="Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit amet facilisis massa laoreet. Integer mollis nec sapien eu lacinia."
+                  data-modal-image="img/drops/4.jpeg"
+                  data-modal-title="PropTech"
+                  data-modal-description="Our PropTech solutions simplify property transactions, making buying, selling, and managing properties more accessible and efficient for everyone.."
                   data-modal-opensea-url="#"
                   data-modal-discord-url=""
                 >
                   <div className="img_holder">
-                    <img src="img/drops/4.jpg" alt="" />
+                    <img src="img/drops/4.jpeg" alt="" />
                     <a onClick={() => onClick(4)} className="full_link" />
                   </div>
-                  <div className="title_holder">
-                    <h3 className="fn_title">
-                      <a onClick={() => onClick(4)}>Neoh #4585</a>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div
-                  className="item"
-                  data-modal-image="img/drops/5.jpg"
-                  data-modal-title="Neoh #4584"
-                  data-modal-description="Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit amet facilisis massa laoreet. Integer mollis nec sapien eu lacinia."
-                  data-modal-opensea-url="#"
-                  data-modal-discord-url=""
-                >
-                  <div className="img_holder">
-                    <img src="img/drops/5.jpg" alt="" />
-                    <a onClick={() => onClick(5)} className="full_link" />
-                  </div>
-                  <div className="title_holder">
-                    <h3 className="fn_title">
-                      <a onClick={() => onClick(5)}>Neoh #4584</a>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div
-                  className="item"
-                  data-modal-image="img/drops/6.jpg"
-                  data-modal-title="Neoh #4583"
-                  data-modal-description="Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit amet facilisis massa laoreet. Integer mollis nec sapien eu lacinia."
-                  data-modal-opensea-url="#"
-                  data-modal-discord-url=""
-                >
-                  <div className="img_holder">
-                    <img src="img/drops/6.jpg" alt="" />
-                    <a onClick={() => onClick(6)} className="full_link" />
-                  </div>
-                  <div className="title_holder">
-                    <h3 className="fn_title">
-                      <a onClick={() => onClick(6)}>Neoh #4583</a>
-                    </h3>
+
+                  <div className="title_holder" style={{ textAlign: "center" }}>
+                    <h3 className="fn_title">PropTech</h3>
+                    <div className="buttons">
+                      <a
+                        onClick={() => onClick(4)}
+                        className="neoh_fn_button only_text"
+                        style={{ display: "inline-block", marginTop: "20px" }}
+                      >
+                        <span className="text">Read More</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </li>

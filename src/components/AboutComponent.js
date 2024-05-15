@@ -10,36 +10,27 @@ const AboutComponent = () => {
           </div>
           <div className="content_item">
             <div className="neoh_fn_title" data-align="left">
-              <h3 className="fn_title">The Rise of Neoh</h3>
+              <h3 className="fn_title">NODEPROP TECH</h3>
               <div className="line">
                 <span />
               </div>
             </div>
             <div className="desc">
               <p>
-                As the first hero of the Neoh Universe, collection has over
-                9,999 unique skins drawn from the different missions and
-                challenges he faced throughout his life.
+                Node PropTech redefines property ownership. With us, you can
+                invest in properties for as little as you desire, opening the
+                door to an affordable and flexible real estate journey.
               </p>
               <p>
-                The artwork has been hand-drawned by Robert Green in the
-                traditional anime style and composited by Layla Efiyo.
+                Whether you're a seasoned investor or a first-time buyer,
+                fractional investment empowers you to diversify your portfolio,
+                mitigate risks, and enjoy the privileges of property ownership
+                without breaking the bank.
               </p>
             </div>
             <div className="buttons">
               <a
-                href="https://opensea.io/"
-                target="_blank"
-                rel="noreferrer"
-                className="neoh_fn_button"
-              >
-                <span className="icon">
-                  <img src="svg/opensea.svg" alt="" className="fn__svg" />
-                </span>
-                <span className="text">OpenSea</span>
-              </a>
-              <a
-                href="https://discord.com/"
+                href="/blog"
                 target="_blank"
                 rel="noreferrer"
                 className="neoh_fn_button"
@@ -47,7 +38,18 @@ const AboutComponent = () => {
                 <span className="icon">
                   <img src="svg/discord.svg" alt="" className="fn__svg" />
                 </span>
-                <span className="text">Discord</span>
+                <span className="text">Our Blogs</span>
+              </a>
+              <a
+                href="/product"
+                target="_blank"
+                rel="noreferrer"
+                className="neoh_fn_button"
+              >
+                <span className="icon">
+                  <img src="svg/opensea.svg" alt="" className="fn__svg" />
+                </span>
+                <span className="text">Our Products</span>
               </a>
             </div>
           </div>
@@ -60,22 +62,21 @@ const AboutComponent = () => {
           </div>
           <div className="content_item">
             <div className="neoh_fn_title" data-align="left">
-              <h3 className="fn_title">High Quality NFT Collection</h3>
+              <h3 className="fn_title">About Us</h3>
               <div className="line">
                 <span />
               </div>
             </div>
             <div className="desc">
               <p>
-                Simply holding a Neoh will give you access to seasonal airdrops,
-                merchandise, physical and digital artworks, collectibles and
-                more.
+                Node PropTech is your gateway to the future of real estate
+                investment. We’re here to simplify the complex world of property
+                investment, making it accessible to everyone, regardless of
+                their financial capacity .
               </p>
               <p>
-                We understand the importance of the cross-over between these
-                worlds and we truly believe to bridge these two together. Our
-                goals will always be for the community - creating, building and
-                innovating together with the commmunity.
+                At Node PropTech, we’re on a mission to revolutionize the real
+                estate industry.
               </p>
             </div>
             <div className="buttons">

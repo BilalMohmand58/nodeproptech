@@ -4,7 +4,6 @@ import { Fragment, useEffect } from "react";
 import {
   animationText,
   dataBgImg,
-  imgToSVG,
   neoh_fn_moving_blog,
   progressTotop,
   stickyNav,
@@ -18,7 +17,7 @@ const Layout = ({ children, pageName }) => {
     animationText();
     neoh_fn_moving_blog();
     dataBgImg();
-    imgToSVG();
+
     window.addEventListener("scroll", stickyNav);
     window.addEventListener("scroll", progressTotop);
   }, []);

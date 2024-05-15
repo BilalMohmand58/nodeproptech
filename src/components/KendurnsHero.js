@@ -47,11 +47,13 @@ const KendurnsHero = () => {
           <div className="content">
             <div id="magic" />
             <h2 className="fn_title" title="Neoh">
-              Neoh
+              Node
             </h2>
+            <h3 className="fn_title2" title="Neoh">
+              Prop Tech
+            </h3>
             <p className="fn_desc fn_animated_text">
-              The collection built by and runby ‘codeefly’. Together we are
-              strong than ever.
+              Featured and Fabulous – Unlock the possibilities
             </p>
           </div>
         </div>
