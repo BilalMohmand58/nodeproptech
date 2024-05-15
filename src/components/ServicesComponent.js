@@ -31,11 +31,12 @@ const ServicesComponent = () => {
                   <span>01</span>
                 </div>
                 <div className="item_content">
-                  <h3 className="fn_title">Huge Collection</h3>
+                  <h3 className="fn_title"> Streamlined Efficiency</h3>
                   <p className="fn_desc fn_animated_text">
-                    A collection of 5,000 unique NEOHs built to go beyond the
-                    digital space that will unlock numerous benefits for our
-                    community.
+                    Node PropTech is leveraging the latest advancements to make
+                    property management and investment easier, Simplifying
+                    complex processes, automating tasks,Centralizing data to
+                    allow to manage real estate portfolio.
                   </p>
                 </div>
               </div>
@@ -46,11 +47,12 @@ const ServicesComponent = () => {
                   <span>02</span>
                 </div>
                 <div className="item_content">
-                  <h3 className="fn_title">High Quality</h3>
+                  <h3 className="fn_title">Data-Driven Insights</h3>
                   <p className="fn_desc fn_animated_text">
-                    The NEOH collection includes dozens of rare heads, costumes,
-                    and colorways of the artists palette. They are drawn with
-                    great care.
+                    Offering powerful analytics and data visualization tools
+                    that provide actionable insights into your real estate
+                    assets. Make informed decisions, identify trends, and
+                    optimize your property portfolio for maximum returns..
                   </p>
                 </div>
               </div>
@@ -61,11 +63,13 @@ const ServicesComponent = () => {
                   <span>03</span>
                 </div>
                 <div className="item_content">
-                  <h3 className="fn_title">Top Resource</h3>
+                  <h3 className="fn_title"> Exceptional support</h3>
                   <p className="fn_desc fn_animated_text">
-                    Tasty design resources made with care for each pixel.
-                    Tokens, NFTs, metaverse and game resources. Access
-                    additional drops.
+                    Our dedicated customer support team is here to assist you
+                    every step of the way. Whether you have questions, need
+                    assistance, or encounter issues, we're committed to
+                    providing responsive and helpful support. Rest assured, your
+                    satisfaction is our top priority.
                   </p>
                 </div>
               </div>
@@ -76,11 +80,12 @@ const ServicesComponent = () => {
                   <span>04</span>
                 </div>
                 <div className="item_content">
-                  <h3 className="fn_title">Big Community</h3>
+                  <h3 className="fn_title">Proven Track Records</h3>
                   <p className="fn_desc fn_animated_text">
-                    Be part of a community of neoh owners and create user
-                    generated items. Rent, advertise, lounch stores, create
-                    items.
+                    With a history of success and satisfied clients, we have a
+                    strong track record in the prop-tech industry. Joining us
+                    means aligning with a trusted partner who can help you
+                    achieve your property management and investment goals.
                   </p>
                 </div>
               </div>

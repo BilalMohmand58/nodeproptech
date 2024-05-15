@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-
+import { IoMdClose } from "react-icons/io";
 const ProductPopup = ({ open, close, img, title, dec }) => {
   return (
     <Fragment>
@@ -7,7 +7,8 @@ const ProductPopup = ({ open, close, img, title, dec }) => {
         <div className="modal_in">
           <div className="modal_closer">
             <a onClick={() => close()}>
-              <img src="svg/cancel.svg" alt="" className="fn__svg" />
+              {/* <img src="svg/cancel.svg" alt="" className="fn__svg" /> */}
+              <IoMdClose size={30} color="white" />
             </a>
           </div>
           <div className="modal_content">
@@ -23,17 +24,11 @@ const ProductPopup = ({ open, close, img, title, dec }) => {
                   </div>
                 </div>
                 <div className="desc">
-                  <p>
-                    {dec
-                      ? dec
-                      : `Suspendisse eu velit est. Cras nec vestibulum quam. Donec
-                    tincidunt purus nec enim tincidunt, sit amet facilisis massa
-                    laoreet. Integer mollis nec sapien eu lacinia.`}
-                  </p>
+                  <p>{dec}</p>
                 </div>
                 <div className="buttons">
                   <a
-                    href="https://opensea.io/"
+                    href="/product"
                     target="_blank"
                     rel="noreferrer"
                     className="neoh_fn_button opensea"
@@ -41,10 +36,10 @@ const ProductPopup = ({ open, close, img, title, dec }) => {
                     <span className="icon">
                       <img src="svg/opensea.svg" alt="" className="fn__svg" />
                     </span>
-                    <span className="text">View on OpenSea</span>
+                    <span className="text">Our Products</span>
                   </a>
                   <a
-                    href="https://discord.com/"
+                    href="/product"
                     target="_blank"
                     rel="noreferrer"
                     className="neoh_fn_button discord disable"
@@ -52,7 +47,7 @@ const ProductPopup = ({ open, close, img, title, dec }) => {
                     <span className="icon">
                       <img src="svg/discord.svg" alt="" className="fn__svg" />
                     </span>
-                    <span className="text">View on Discord</span>
+                    <span className="text">Our Products</span>
                   </a>
                 </div>
               </div>

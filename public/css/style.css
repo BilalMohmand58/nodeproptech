@@ -10,7 +10,7 @@
 	
 	01) Base
 
-
+.neoh_fn_hero .fn_title
 /*------------------------------------------------------------------*/
 /*	01) Base
 /*------------------------------------------------------------------*/
@@ -24,6 +24,22 @@
 	--eff: 'Open Sans', sans-serif;
 	--extra-color: #666;
 }
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	background-color: #fff;
+	color:  rgba(0, 0, 0, 0.8);
+	border-radius: 5px;
+	display: none;
+  }
+  
+  .popup.active {
+	display: block;
+  }
+.neoh_fn_hero .bg_colo
 html{
 	overflow-x: hidden;
 	padding: 0px;
@@ -321,6 +337,7 @@ a.full_link{
 .neoh_fn_hero .overlay_slider .swiper-container{
 	cursor: e-resize;
 }
+
 .neoh_fn_hero iframe{
 	position: absolute;
 	top: 50%;
@@ -332,6 +349,7 @@ a.full_link{
 }
 .neoh_fn_hero .bg_color{
 	background-color: rgba(0,0,0,0.85);
+	opacity:50%;
 }
 
 
@@ -388,7 +406,22 @@ a.full_link{
 	letter-spacing: 35px; /* after changing this value, don't forget to change left value */
 	line-height: 1;
 	margin-bottom: 10px;
-	font-family: neon;
+	/* font-family: neon; */
+	transform: translateZ(0);
+	overflow: hidden;
+	position: relative;
+	left: 17px;  /* because of letter spacing, if you change letter spacing, don't forget to change its value also */
+}
+.neoh_fn_hero .fn_title2{
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 60px;
+	text-transform: uppercase;
+	letter-spacing: 35px; /* after changing this value, don't forget to change left value */
+	line-height: 1;
+	margin-bottom: 10px;
+	/* font-family: neon; */
 	transform: translateZ(0);
 	overflow: hidden;
 	position: relative;
@@ -549,7 +582,7 @@ a.full_link{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: #353535;
+	background-color: #3b373c;
 	left: 0;
 	top: 0;
 	transform: rotate(5deg);
@@ -931,25 +964,22 @@ a.full_link{
 	margin-bottom: 143px;
 }
 .neoh_fn_drops ul{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
+
 	display: flex;
-	-webkit-flex-direction: row;
-	-moz-flex-direction: row;
-	-ms-flex-direction: row;
-	-o-flex-direction: row;
+	
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin: 0;
+	margin: auto;
+	
 	padding: 0;
 	list-style-type: none;
-	margin-left: -40px;
+	
+
 }
 .neoh_fn_drops li{
-	width: 33.3333%;
-	padding-left: 40px;
+	width: 45.3333%;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-bottom: 40px;
 }
 .neoh_fn_drops .item{
@@ -4416,6 +4446,11 @@ a.full_link{
 @media(max-width: 1500px){
 	.neoh_fn_drops li{
 		width: 50%;
+	}
+}
+@media(min-width: 1500px){
+	.neoh_fn_drops ul{
+		margin-left: 10%;
 	}
 }
 @media(max-width: 1040px){

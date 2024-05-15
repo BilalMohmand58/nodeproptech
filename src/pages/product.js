@@ -22,7 +22,6 @@ const Product = () => {
       <WhyChooseUsComponent />
       {/* !Investor Section */}
       {/* Blog Section */}
-      <BlogComponent />
     </Layout>
   );
 };

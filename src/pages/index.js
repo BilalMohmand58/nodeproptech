@@ -4,8 +4,23 @@ import BlogComponent from "@components/BlogComponent";
 import Drops from "@components/Drops";
 import ServicesComponent from "@components/ServicesComponent";
 import WhyChooseUsComponent from "@components/WhyChooseUsComponent";
+import { createClient } from "contentful";
+export async function getStaticProps() {
+  const client = createClient({
+    space: "jyd9wciqks30",
+    accessToken: "alGDad9j_RkxN6Gmh_jMPk935OdL9rXbgjRMbGT6axU",
+  });
 
-const Index = () => {
+  const res = await client.getEntries({ content_type: "blog" });
+
+  return {
+    props: {
+      posts: res?.items,
+    },
+    revalidate: 1,
+  };
+}
+const Index = ({ posts }) => {
   return (
     <Layout pageName={"Home Static"}>
       {/* Hero Header */}
@@ -16,7 +31,7 @@ const Index = () => {
           <div className="bg_color" />
           {/* !Overlay Color */}
           {/* Overlay Image */}
-          <div className="bg_image" data-bg-img="img/hero/bg.jpg" />
+          <div className="bg_image" data-bg-img="img/hero/1.jpeg" />
           {/* !Overlay Image */}
         </div>
         {/* Overlay (of hero header) */}
@@ -26,7 +41,8 @@ const Index = () => {
               <h2 className="fn_title" title="Neoh">
                 Node
               </h2>
-              <h2>Prop Tech</h2>
+              <h3 className="fn_title2">Prop Tech</h3>
+
               <p className="fn_desc fn_animated_text">
                 Immerse yourself in cutting-edge technologies and services that
                 are molding the future of property investment and management.
@@ -56,7 +72,7 @@ const Index = () => {
       <WhyChooseUsComponent />
       {/* !Investor Section */}
       {/* Blog Section */}
-      <BlogComponent />
+      <BlogComponent posts={posts} />
     </Layout>
   );
 };
