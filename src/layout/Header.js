@@ -116,11 +116,8 @@ const Header = () => {
           <div className="nf_left">
             <p>
               Copyright {new Date().getFullYear()}- Designed &amp; Developed by{" "}
-              <a
-                href="https://themeforest.net/user/codeefly/portfolio"
-                target="_blank"
-              >
-                Codeefly
+              <a href="https://themaidaan.com" target="_blank">
+                Maidaan
               </a>
             </p>
           </div>
@@ -158,12 +155,8 @@ const Header = () => {
       <header className="neoh_fn_header">
         <div className="container">
           <div className="header_in">
-            <div className="logo">
-              <Link legacyBehavior href="/">
-                <a>
-                  <img src="img/logo.png" alt="" />
-                </a>
-              </Link>
+            <div className="logo-img">
+              <img src="img/logo.png" alt="" />
             </div>
             <div className="trigger">
               <div className="trigger_in" onClick={() => setToggle(!toggle)}>

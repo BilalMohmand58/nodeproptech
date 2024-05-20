@@ -1,9 +1,19 @@
 import React from "react";
 import Link from "next/link";
+import Head from "next/head";
 const DetailBlog = ({ blog }) => {
-  const { title, discription, date, image, thumbnail } = blog?.fields;
+  const { title, discription, date, image, thumbnail, slug, shortDiscription } =
+    blog?.fields;
+
+  const articleUrl = `http://localhost:3000//blog/${slug}`;
+
+  const shareUrl = encodeURIComponent(articleUrl);
   return (
     <>
+      <Head>
+        <title>Blog | {title}</title>
+        <meta name="description" content={shortDiscription} />
+      </Head>
       <div className="neoh_fn_blog_single neoh_fn_single">
         {/* Single Background */}
         <div className="single_bg" />
@@ -15,28 +25,28 @@ const DetailBlog = ({ blog }) => {
               <h5 className="label">Share:</h5>
               <ul>
                 <li>
-                  <a href="#">
+                  <a href={`https://twitter.com/intent/tweet?url=${shareUrl}`}>
                     <i className="fn-icon-twitter" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a
+                    href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
+                  >
                     <i className="fn-icon-facebook" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href={`https://www.instagram.com/share?url=${shareUrl}`}>
                     <i className="fn-icon-instagram" />
                   </a>
                 </li>
+
                 <li>
-                  <a href="#">
-                    <i className="fn-icon-pinterest" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fn-icon-behance" />
+                  <a
+                    href={`https://www.linkedin.com/shareArticle?url=${shareUrl}`}
+                  >
+                    <i className="fn-icon-linkedin" />
                   </a>
                 </li>
               </ul>
@@ -125,7 +135,7 @@ const DetailBlog = ({ blog }) => {
                       life, design and travel for friendship, food, fun and
                       more.
                     </p>
-                    <ul className="social">
+                    {/* <ul className="social">
                       <li>
                         <a href="#">
                           <i className="fn-icon-twitter" />
@@ -151,20 +161,20 @@ const DetailBlog = ({ blog }) => {
                           <i className="fn-icon-behance" />
                         </a>
                       </li>
-                    </ul>
+                    </ul> */}
                   </div>
                 </div>
                 {/* !Author Information Box */}
                 {/* Tags */}
                 <div className="neoh_fn_tags">
                   <h4 className="label">Tags:</h4>
-                  <a href="#">Tokens</a>
+                  <a href="#">nodeprop</a>
                   <span>,</span>
-                  <a href="#">NFT</a>
+                  <a href="#">proptech</a>
                   <span>,</span>
-                  <a href="#">Featured</a>
+                  <a href="#">technalogy</a>
                   <span>,</span>
-                  <a href="#">Insights</a>
+                  <a href="#">property</a>
                 </div>
                 {/* !Tags */}
               </div>
@@ -213,33 +223,23 @@ const DetailBlog = ({ blog }) => {
                   <div className="neoh_fn_widget_social">
                     <ul>
                       <li>
-                        <a href="#">
-                          <i className="fn-icon-facebook" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
+                        <a href="https://twitter.com/TheNodePropTech">
                           <i className="fn-icon-twitter" />
                         </a>
                       </li>
                       <li>
-                        <a href="#">
-                          <i className="fn-icon-youtube-play" />
+                        <a href="https://www.facebook.com/TheNodePropTech">
+                          <i className="fn-icon-facebook" />
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://www.instagram.com/node.proptech/">
                           <i className="fn-icon-instagram" />
                         </a>
                       </li>
                       <li>
-                        <a href="#">
-                          <i className="fn-icon-soundcloud" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fn-icon-vkontakte" />
+                        <a href="https://www.linkedin.com/company/nodeproptech">
+                          <i className="fn-icon-linkedin" />
                         </a>
                       </li>
                     </ul>

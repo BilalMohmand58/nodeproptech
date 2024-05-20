@@ -1,5 +1,5 @@
 import VideoPopup from "@/components/popup/VideoPopup";
-import Head from "next/head";
+
 import { Fragment, useEffect } from "react";
 import {
   animationText,
@@ -23,9 +23,6 @@ const Layout = ({ children, pageName }) => {
   }, []);
   return (
     <Fragment>
-      <Head>
-        <title>Neoh | {pageName}</title>
-      </Head>
       <VideoPopup />
       <div className="neoh_fn_main" data-footer-sticky="">
         <Header />

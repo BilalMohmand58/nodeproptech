@@ -1,3 +1,4 @@
+import SubscribeForm from "@/components/newsletter/SubscribeForm";
 import Link from "next/link";
 const Footer = () => {
   return (
@@ -9,7 +10,11 @@ const Footer = () => {
             <div className="ft_in">
               <div className="desc">
                 <div className="img">
-                  <img src="img/footer-logo.png" alt="" />
+                  <img
+                    src="img/footer-logo.png"
+                    alt=""
+                    style={{ width: "50px" }}
+                  />
                 </div>
                 <h3 className="fn_title">Join Now For Early Access</h3>
                 <p className="fn_desc">
@@ -18,23 +23,7 @@ const Footer = () => {
                   posuere nibh a mi molestie, sit amet ornare
                 </p>
               </div>
-              <div className="subscribe_form">
-                <div className="subscribe_in">
-                  <input type="text" placeholder="Email..." />
-                  <a href="#" className="neoh_fn_button only_text">
-                    <span className="text">Subscribe</span>
-                  </a>
-                </div>
-                <div
-                  className="returnmessage"
-                  data-success="Your message has been received, We will contact you soon."
-                  data-message="You have subscribed to our updates. Thank you"
-                  data-invalid-email="Please enter valid email!"
-                />
-                <div className="empty_notice">
-                  <span>Please enter your Email</span>
-                </div>
-              </div>
+              <SubscribeForm />
               <div className="neoh_fn_social_list">
                 <ul>
                   <li>
@@ -72,11 +61,11 @@ const Footer = () => {
                   Copyright {new Date().getFullYear()} - Designed &amp;
                   Developed by{" "}
                   <a
-                    href="https://themeforest.net/user/codeefly/portfolio"
+                    href="https://www.themaidaan.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Codeefly
+                    maidaan
                   </a>
                 </p>
               </div>
@@ -88,7 +77,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <a href="#">Cookies</a>
+                    <a href="/contact">Contact</a>
                   </li>
                   <li>
                     <a href="#">Terms &amp; Conditions</a>
