@@ -90,8 +90,8 @@ const DetailBlog = ({ blog }) => {
                 <div className="single_title">
                   <h2 className="fn_title">{title}</h2>
                   <div className="categories">
-                    <a href="#">Tokens</a>, <a href="#">NFTs</a>,{" "}
-                    <a href="#">Crypto</a>
+                    <a href="/">Technalogy</a>, <a href="/">Node</a>,{" "}
+                    <a href="/">Property</a>
                   </div>
                 </div>
                 {/* !Single Title */}
@@ -126,14 +126,16 @@ const DetailBlog = ({ blog }) => {
                 {/* Author Information Box */}
                 <div className="neoh_fn_author_info">
                   <div className="info_img">
-                    <img src="img/blog/author.jpg" alt="" />
+                    <img
+                      src="https://www.themaidaan.com/_next/static/media/logo.ec4dcbc9.png"
+                      alt=""
+                    />
                   </div>
                   <div className="info_desc">
-                    <h3 className="fn_title">Josephine Sanchez</h3>
+                    <h4 className="fn_title">Maidaan</h4>
                     <p className="fn_desc">
-                      Josephine is a writer, editor, etc.-er who muses about
-                      life, design and travel for friendship, food, fun and
-                      more.
+                      Comprehensive real estate marketing solutions under one
+                      roof.
                     </p>
                     {/* <ul className="social">
                       <li>
@@ -194,22 +196,24 @@ const DetailBlog = ({ blog }) => {
                       </div>*/}
                     </div>
                     <div className="afwa_title">
-                      <h3>Maria Blonde</h3>
+                      <h3>Node PropTech</h3>
                       <p>
-                        <a href="mailto:mariablonde@gmail.com">
-                          mariablonde@gmail.com
-                        </a>
+                        <a href="info@themaidaan.com">info@themaidaan.com</a>
                       </p>
                     </div>
                     <div className="afwa_desc">
                       <p>
-                        I want your outer personal style to reflect the inner
-                        you. I understand the importance of creating an interior
-                        that gives a sense of solace
+                        Immerse yourself in cutting-edge technologies and
+                        services that are molding the future of property
+                        investment and management.
                       </p>
                     </div>
                     <div className="afwa_signature">
-                      <img src="../../img/widgets/about-sign.png" alt="" />
+                      <img
+                        src="../../img/logo.png"
+                        alt=""
+                        style={{ width: "180px" }}
+                      />
                     </div>
                   </div>
                 </div>

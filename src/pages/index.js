@@ -81,7 +81,7 @@ const Index = ({ posts }) => {
         {/* !Services Section */}
         <Drops />
         {/* Investor Section */}
-        <WhyChooseUsComponent />
+        {/* <WhyChooseUsComponent /> */}
         {/* !Investor Section */}
         {/* Blog Section */}
         <BlogComponent posts={posts} />

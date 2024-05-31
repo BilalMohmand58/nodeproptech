@@ -71,17 +71,17 @@ const Footer = () => {
               </div>
               <div className="fb_right">
                 <ul>
-                  <li>
+                  {/* <li>
                     <Link legacyBehavior href="/roadmap">
                       RoadMap
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <a href="/contact">Contact</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="#">Terms &amp; Conditions</a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

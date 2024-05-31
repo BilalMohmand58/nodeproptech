@@ -31,7 +31,11 @@ const Blog = ({ posts }) => {
       </Head>
 
       <Layout pageName={"Blog"}>
-        <PageBanner pageName={"Blog"} />
+        <PageBanner
+          pageName={"Blog"}
+          pagetext={"Set Sail Towards Your Property Success Today "}
+          pagetext2={" Join us to get started."}
+        />
         <div className="neoh_fn_blog_page">
           <BlogCard posts={posts} />
         </div>

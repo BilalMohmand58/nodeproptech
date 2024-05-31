@@ -99,11 +99,7 @@ const Header = () => {
               </span>
               <span className="text">OpenSea</span>
             </a>
-            <a
-              href="https://discord.com/"
-              className="neoh_fn_button"
-              target="_blank"
-            >
+            <a href="/" className="neoh_fn_button" target="_blank">
               <span className="icon">
                 <img src="svg/discord.svg" alt="" className="fn__svg" />
               </span>

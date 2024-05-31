@@ -5,8 +5,8 @@ const ContactInfo = () => {
     <>
       <div className="desc_holder">
         <p>
-          Make informed decisions, harness the power of fractional investment ,
-          and explore sustainable living options with us.
+          Make an Informed Real Estate Decision Today Sign up and witness your
+          real estate wealth grow with Node Solutions.
         </p>
       </div>
       <div className="info_list">
@@ -15,16 +15,24 @@ const ContactInfo = () => {
           <p className="label">Address</p>
           <h3 className="value">69 Queen St, Melbourne Australia</h3>
         </li> */}
+
           <li>
-            <p className="label">Phone</p>
+            <p className="label">Email</p>
             <h3 className="value">
-              <a href="tel:+7068980751">(+92) 304-111-3309</a>
+              <a href="#">info@nodeproptech.com</a>
             </h3>
           </li>
           <li>
-            <a href="mailto:example@domain.com" className="email">
-              info@themaidaan.com
-            </a>
+            <p className="label">Support</p>
+            <h3 className="value">
+              <a href="#">support@nodeproptech.com</a>
+            </h3>
+          </li>
+          <li>
+            <p className="label">Address</p>
+            <p>
+              Islamabad, Blue Area, near Savour Foods, Fortune Plaza, 3rd Floor
+            </p>
           </li>
         </ul>
       </div>

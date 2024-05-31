@@ -15,7 +15,7 @@ const CardBody = ({ post }) => {
           <span>{date}</span>
         </p>
         <h3 className="fn_title">
-          <Link legacyBehavior href="/blog-single">
+          <Link legacyBehavior href={"/blog/" + slug}>
             <a href={"/blog/" + slug}>{title}</a>
           </Link>
         </h3>

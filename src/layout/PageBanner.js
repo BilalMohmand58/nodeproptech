@@ -1,5 +1,5 @@
 import Link from "next/link";
-const PageBanner = ({ pageName }) => {
+const PageBanner = ({ pageName, pagetext, pagetext2 }) => {
   return (
     <div className="neoh_fn_pagetitle">
       <div className="bg_overlay">
@@ -16,11 +16,12 @@ const PageBanner = ({ pageName }) => {
             {pageName}
           </h3>
           <p className="fn_desc">
-            <Link legacyBehavior href="/">
-              <a>Home</a>
-            </Link>
-            <span className="separator">/</span>
-            <span className="current">{pageName}</span>
+            <b>
+              <span className="current">{pagetext}</span>
+            </b>
+          </p>
+          <p className="fn_desc">
+            <span className="current">{pagetext2}</span>
           </p>
         </div>
       </div>

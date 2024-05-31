@@ -25,44 +25,57 @@ const About = () => {
                 </div>
                 <div className="content_item">
                   <div className="neoh_fn_title" data-align="left">
-                    <h3 className="fn_title">The Rise of Neoh</h3>
+                    <h3 className="fn_title">Our Story </h3>
                     <div className="line">
                       <span />
                     </div>
                   </div>
                   <div className="desc">
                     <p>
-                      As the first hero of the Neoh Universe, collection has
-                      over 9,999 unique skins drawn from the different missions
-                      and challenges he faced throughout his life.
+                      Node PropTech started with the mission to empower
+                      transparency in real estate investment. Our goal was to
+                      revolutionize the industry through technology, ensuring
+                      financial freedom and trust-based investments for all.
+                      With a vision of a modern, tech-driven future, we launched
+                      Node PropTech to bring the entire real estate
+                      ecosystem—investors and developers—together
                     </p>
                     <p>
-                      The artwork has been hand-drawned by Robert Green in the
-                      traditional anime style and composited by Layla Efiyo.
+                      Our unique platform enables fractional real estate
+                      ownership, from paperwork to Web3’s blockchain, ensuring
+                      security and efficiency in every aspect.
                     </p>
                   </div>
                   <div className="buttons">
                     <a
-                      href="https://opensea.io/"
+                      href="/"
                       target="_blank"
                       rel="noreferrer"
                       className="neoh_fn_button"
                     >
                       <span className="icon">
-                        <img src="svg/opensea.svg" alt="" className="fn__svg" />
+                        <img
+                          src="svg/management.svg"
+                          alt=""
+                          className="fn__svg"
+                        />
                       </span>
-                      <span className="text">OpenSea</span>
+                      <span className="text">Home</span>
                     </a>
                     <a
-                      href="https://discord.com/"
+                      href="/"
                       target="_blank"
                       rel="noreferrer"
                       className="neoh_fn_button"
                     >
                       <span className="icon">
-                        <img src="svg/discord.svg" alt="" className="fn__svg" />
+                        <img
+                          src="svg/search-engine.svg"
+                          alt=""
+                          className="fn__svg"
+                        />
                       </span>
-                      <span className="text">Discord</span>
+                      <span className="text">Products</span>
                     </a>
                   </div>
                 </div>
@@ -79,10 +92,11 @@ const About = () => {
                         alt=""
                         className="fn__svg"
                       />
-                      <h3 className="fn_title">Transparency</h3>
+                      <h3 className="fn_title">Our Mission </h3>
                       <p className="fn_desc fn_animated_text">
-                        Morbi non dignissim erat, a blandit felis. Suspendisse
-                        nec lorem vel orci varius congue ut vitae est.
+                        To revolutionize the real estate industry by leveraging
+                        our expertise and technologies, including blockchain,
+                        IoT, FinTech, PropTech, and sustainable living.
                       </p>
                     </div>
                   </li>
@@ -94,21 +108,23 @@ const About = () => {
                         alt=""
                         className="fn__svg"
                       />
-                      <h3 className="fn_title">Experienced Team</h3>
+                      <h3 className="fn_title">Our Vision </h3>
                       <p className="fn_desc fn_animated_text">
-                        Morbi non dignissim erat, a blandit felis. Suspendisse
-                        nec lorem vel orci varius congue ut vitae est.
+                        To make real estate investment accessible to all,
+                        breaking down barriers and fostering a more inclusive,
+                        interconnected investment world. Projects
                       </p>
                     </div>
                   </li>
                   <li>
                     <div className="item">
                       <span className="line" />
-                      <img src="svg/padlock.svg" alt="" className="fn__svg" />
-                      <h3 className="fn_title">Security Guarantee</h3>
+                      <img src="svg/discord.svg" alt="" className="fn__svg" />
+                      <h3 className="fn_title">Our Values</h3>
                       <p className="fn_desc fn_animated_text">
-                        Morbi non dignissim erat, a blandit felis. Suspendisse
-                        nec lorem vel orci varius congue ut vitae est.
+                        Integrity, innovation, and inclusivity drive us to
+                        constantly improve and adapt, ensuring we meet the
+                        diverse needs of our community
                       </p>
                     </div>
                   </li>
@@ -122,28 +138,25 @@ const About = () => {
                 </div>
                 <div className="content_item">
                   <div className="neoh_fn_title" data-align="left">
-                    <h3 className="fn_title">Thousands of Users</h3>
+                    <h3 className="fn_title">How It Works for You</h3>
                     <div className="line">
                       <span />
                     </div>
                   </div>
                   <div className="desc">
                     <p>
-                      Simply holding a Neoh will give you access to seasonal
-                      airdrops, merchandise, physical and digital artworks,
-                      collectibles and more.
+                      <p>
+                        Unlock an affordable and flexible real estate journey.
+                        Enjoy property ownership through our streamlined
+                        one-window projects.
+                      </p>
                     </p>
-                    <p>
-                      We understand the importance of the cross-over between
-                      these worlds and we truly believe to bridge these two
-                      together. Our goals will always be for the community -
-                      creating, building and innovating together with the
-                      commmunity.
-                    </p>
+                    1. Sign-in <br /> 2. Invest <br /> 3. Monitor progress
+                    <p></p>
                   </div>
                   <div className="buttons">
-                    <a href="#" className="neoh_fn_button only_text">
-                      <span className="text">Join Community</span>
+                    <a href="/blog" className="neoh_fn_button only_text">
+                      <span className="text">Our Blog</span>
                     </a>
                   </div>
                 </div>
@@ -153,8 +166,8 @@ const About = () => {
           </section>
           {/* !Information Section */}
           {/* Video Section */}
-          <section id="video">
-            {/* Dividers */}
+          {/* <section id="video">
+            {/* Dividers 
             <img
               src="svg/divider.svg"
               alt=""
@@ -166,7 +179,7 @@ const About = () => {
               className="fn__svg fn__divider bottom_divider"
             />
             {/* !Dividers */}
-            {/* Video Shortcode */}
+          {/* Video Shortcode 
             <div className="neoh_fn_video">
               <div className="bg_overlay">
                 <div className="bg_image" data-bg-img="img/hero/bg.jpg" />
@@ -181,20 +194,21 @@ const About = () => {
                 </a>
               </div>
             </div>
-            {/* !Video Shortcode */}
-          </section>
+            {/* !Video Shortcode 
+          </section> */}
           {/* !Video Section */}
+
           {/* Team Section */}
-          <section id="team">
+          {/* <section id="team">
             <div className="container">
-              {/* Main Title */}
+           
               <div className="neoh_fn_title">
                 <h3 className="fn_title">Our Team Members</h3>
                 <div className="line">
                   <span />
                 </div>
               </div>
-              {/* !Main Title */}
+            
               <div className="mw_650 fn_description">
                 <p className="fn_desc fn_animated_text">
                   The idea was born in London and rapidly became a borderless
@@ -202,7 +216,7 @@ const About = () => {
                   graphics, crypto, technology, and art.
                 </p>
               </div>
-              {/* Team List Shortcode */}
+          
               <div className="neoh_fn_team">
                 <ul className="team_list">
                   <li className="team_item">
@@ -459,9 +473,9 @@ const About = () => {
                   </li>
                 </ul>
               </div>
-              {/* !Team List Shortcode */}
+         
             </div>
-          </section>
+          </section> */}
           {/* !Team Section */}
         </div>
       </Layout>
