@@ -10,27 +10,34 @@ const AboutComponent = () => {
           </div>
           <div className="content_item">
             <div className="neoh_fn_title" data-align="left">
-              <h3 className="fn_title">NODEPROP TECH</h3>
+              <h3 className="fn_title">NodeProp Tech</h3>
               <div className="line">
                 <span />
               </div>
             </div>
             <div className="desc">
+              <h5>
+                Pakistan’s Premier Hub for Transparent Real Estate Investment!
+              </h5>
+              <h6>
+                <b>
+                  Invest securely and start with any amount you desire. Begin
+                  your journey now.
+                </b>{" "}
+              </h6>
               <p>
-                Node PropTech redefines property ownership. With us, you can
-                invest in properties for as little as you desire, opening the
-                door to an affordable and flexible real estate journey.
-              </p>
-              <p>
-                Whether you're a seasoned investor or a first-time buyer,
-                fractional investment empowers you to diversify your portfolio,
-                mitigate risks, and enjoy the privileges of property ownership
-                without breaking the bank.
+                • Valid Projects: Certified, verified, and validated projects.
+                Licensed and NOC-approved for a positive experience. <br /> •
+                Friendly Prices: Transparent and competitive pricing with no
+                hidden charges. <br /> • Powered by Blockchain: Secure,
+                transparent, and verifiable transactions. <br /> • Customized
+                Plans: Whether buying, investing, managing, or seeking
+                commissions, Node has you covered.
               </p>
             </div>
             <div className="buttons">
               <a
-                href="/blog"
+                href="/about"
                 target="_blank"
                 rel="noreferrer"
                 className="neoh_fn_button"
@@ -38,10 +45,10 @@ const AboutComponent = () => {
                 <span className="icon">
                   <img src="svg/discord.svg" alt="" className="fn__svg" />
                 </span>
-                <span className="text">Our Blogs</span>
+                <span className="text">More About Us</span>
               </a>
               <a
-                href="/product"
+                href="/blog"
                 target="_blank"
                 rel="noreferrer"
                 className="neoh_fn_button"
@@ -49,7 +56,7 @@ const AboutComponent = () => {
                 <span className="icon">
                   <img src="svg/opensea.svg" alt="" className="fn__svg" />
                 </span>
-                <span className="text">Our Products</span>
+                <span className="text">Our Blogs</span>
               </a>
             </div>
           </div>
@@ -62,27 +69,30 @@ const AboutComponent = () => {
           </div>
           <div className="content_item">
             <div className="neoh_fn_title" data-align="left">
-              <h3 className="fn_title">About Us</h3>
+              <h3 className="fn_title">Why Choose Node PropTech?</h3>
               <div className="line">
                 <span />
               </div>
             </div>
             <div className="desc">
               <p>
-                Node PropTech is your gateway to the future of real estate
-                investment. We’re here to simplify the complex world of property
-                investment, making it accessible to everyone, regardless of
-                their financial capacity .
+                A cutting-edge platform offering high ROI opportunities for
+                everyone. Leveraging technology to provide:
               </p>
               <p>
-                At Node PropTech, we’re on a mission to revolutionize the real
-                estate industry.
+                • 100% tamper-proof transactions <br />• Real-time valuation
+                <br /> • Global transactions
+                <br /> • Flexible tradable tokens
+                <br /> • Transparent investment portfolios
+                <br /> • Easy token-to-cash conversions
+                <br /> • Property learning hub
+                <br /> • Market predictions
               </p>
             </div>
             <div className="buttons">
-              <Link legacyBehavior href="/about">
+              <Link legacyBehavior href="/product">
                 <a className="neoh_fn_button only_text">
-                  <span className="text">More About US</span>
+                  <span className="text">Our Products</span>
                 </a>
               </Link>
             </div>

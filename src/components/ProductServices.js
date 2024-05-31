@@ -1,4 +1,4 @@
-const ServicesComponent = () => {
+const ProductServices = () => {
   return (
     <section id="services">
       {/* Dividers */}
@@ -16,7 +16,11 @@ const ServicesComponent = () => {
       <div className="container">
         {/* Main Title */}
         <div className="neoh_fn_title">
-          <h3 className="fn_title">Features</h3>
+          <h3 className="fn_title">Accept the Real Estate Challenge with Us</h3>
+          <p>
+            Our platform simplifies real estate investment, ensuring financial
+            transparency and sustainability.
+          </p>
           <div className="line">
             <span />
           </div>
@@ -31,12 +35,10 @@ const ServicesComponent = () => {
                   <span>01</span>
                 </div>
                 <div className="item_content">
-                  <h3 className="fn_title"> Streamlined Efficiency</h3>
+                  <h3 className="fn_title">Sustainability</h3>
                   <p className="fn_desc fn_animated_text">
-                    Node PropTech is leveraging the latest advancements to make
-                    property management and investment easier, Simplifying
-                    complex processes, automating tasks,Centralizing data to
-                    allow to manage real estate portfolio.
+                    Combining financial technology with real estate for
+                    sustainable investment solutions.
                   </p>
                 </div>
               </div>
@@ -47,12 +49,9 @@ const ServicesComponent = () => {
                   <span>02</span>
                 </div>
                 <div className="item_content">
-                  <h3 className="fn_title">Data-Driven Insights</h3>
+                  <h3 className="fn_title">Transparency</h3>
                   <p className="fn_desc fn_animated_text">
-                    Offering powerful analytics and data visualization tools
-                    that provide actionable insights into your real estate
-                    assets. Make informed decisions, identify trends, and
-                    optimize your property portfolio for maximum returns..
+                    Eliminating property fraud with blockchain technology.
                   </p>
                 </div>
               </div>
@@ -63,13 +62,10 @@ const ServicesComponent = () => {
                   <span>03</span>
                 </div>
                 <div className="item_content">
-                  <h3 className="fn_title"> Exceptional support</h3>
+                  <h3 className="fn_title">Efficiency</h3>
                   <p className="fn_desc fn_animated_text">
-                    Our dedicated customer support team is here to assist you
-                    every step of the way. Whether you have questions, need
-                    assistance, or encounter issues, we're committed to
-                    providing responsive and helpful support. Rest assured, your
-                    satisfaction is our top priority.
+                    Simplifying property transactions—buy, sell, and manage
+                    properties with ease.
                   </p>
                 </div>
               </div>
@@ -80,12 +76,10 @@ const ServicesComponent = () => {
                   <span>04</span>
                 </div>
                 <div className="item_content">
-                  <h3 className="fn_title">Proven Track Records</h3>
+                  <h3 className="fn_title">Smart Solutions</h3>
                   <p className="fn_desc fn_animated_text">
-                    With a history of success and satisfied clients, we have a
-                    strong track record in the prop-tech industry. Joining us
-                    means aligning with a trusted partner who can help you
-                    achieve your property management and investment goals.
+                    Overcoming reservations with smart, inclusive investment
+                    options.s.
                   </p>
                 </div>
               </div>
@@ -97,4 +91,4 @@ const ServicesComponent = () => {
     </section>
   );
 };
-export default ServicesComponent;
+export default ProductServices;

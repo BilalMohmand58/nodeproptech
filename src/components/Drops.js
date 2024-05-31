@@ -81,7 +81,7 @@ const Drops = () => {
                     <h3 className="fn_title">Blockchain</h3>
                     <div className="buttons">
                       <a
-                        onClick={() => onClick(4)}
+                        onClick={() => onClick(1)}
                         className="neoh_fn_button only_text"
                         style={{ display: "inline-block", marginTop: "20px" }}
                       >
@@ -179,7 +179,7 @@ const Drops = () => {
             <div className="clearfix" />
           </div>
           {/* !Drops List */}
-          <Timeline />
+          {/* <Timeline /> */}
         </div>
       </section>
       {/* !Drops Section */}

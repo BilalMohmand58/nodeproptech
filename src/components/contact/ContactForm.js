@@ -132,6 +132,7 @@ const ContactForm = () => {
                   disabled={!values.name || !values.email || !values.number}
                   onClick={onSubmit}
                   className="neoh_fn_button only_text"
+                  style={{ background: "black" }}
                 >
                   {isLoading ? "Sending..." : "Send Message"}
                 </button>

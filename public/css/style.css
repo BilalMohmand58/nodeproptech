@@ -9,14 +9,13 @@
 	List of CSS codes:
 	
 	01) Base
-
-.neoh_fn_hero .fn_title
+container
 /*------------------------------------------------------------------*/
 /*	01) Base
 /*------------------------------------------------------------------*/
 :root{
 	--sbc: #0a0a0a;
-	--mc: #78f701;
+	--mc: #00DDD2;
 	--hc: #fff;
 	--bc: #ccc;
 	--hff: 'Heebo', sans-serif;
@@ -24,6 +23,7 @@
 	--eff: 'Open Sans', sans-serif;
 	--extra-color: #666;
 }
+/* conatct form popup */
 .popup {
 	position: fixed;
 	top: 50%;
@@ -39,6 +39,9 @@
   .popup.active {
 	display: block;
   }
+/*end conatct form pop up */
+
+
 .neoh_fn_hero .bg_colo
 html{
 	overflow-x: hidden;
@@ -65,7 +68,7 @@ body{
 	fill: currentcolor;
 	width: 18px;
 	height: 18px;
-	opacity: 0;
+	opacity: 100;
 }
 .replaced-svg{
 	opacity: 1;
@@ -136,7 +139,7 @@ input[type="text"]:focus{
 }
 @media(max-width: 1400px){.container{padding: 0 40px;}}
 @media(max-width: 1040px){.container{padding: 0 20px;}}
-@media(max-width: 480px){.container{padding: 0 10px;}}
+@media(max-width: 480px){.container{padding: 0 20px;}}
 /*------------------------------------------------------------------*/
 /*	02) Some codes
 /*------------------------------------------------------------------*/
@@ -152,6 +155,7 @@ a.full_link{
 .bg_overlay .bg_color,
 .bg_overlay{
 	position: absolute;
+	
 	top: 0;
 	left: 0;
 	right: 0;
@@ -220,6 +224,9 @@ a.full_link{
 	justify-content: space-between;
 	-ms-align-items: center;
 	align-items: center;
+}
+.logo-img img{
+	width: 200px;
 }
 .trigger_in{
 	cursor: pointer;
@@ -349,7 +356,7 @@ a.full_link{
 }
 .neoh_fn_hero .bg_color{
 	background-color: rgba(0,0,0,0.85);
-	opacity:50%;
+	opacity:60%;
 }
 
 
@@ -757,6 +764,8 @@ a.full_link{
 	position: relative;
 	text-align: center;
 	letter-spacing: .5px;
+	cursor: pointer;
+
 }
 .neoh_fn_button .text{
 	white-space: nowrap;
@@ -961,7 +970,7 @@ a.full_link{
 }
 /* Drops List Shortcode */
 #drop .neoh_fn_drops{
-	margin-bottom: 143px;
+	margin-bottom: 13px;
 }
 .neoh_fn_drops ul{
 
@@ -1745,8 +1754,9 @@ a.full_link{
 	overflow-x: hidden;
 }
 .neoh_fn_nav .nav_content{
-	scrollbar-width: thin;
-	scrollbar-color: #999 #fff;
+	/* scrollbar-width: thin; */
+	/* scrollbar-color: #999 #fff; */
+
 }
 .neoh_fn_nav .nav_content::-webkit-scrollbar{
   width: 4px;
@@ -2730,7 +2740,7 @@ a.full_link{
 	transform: translateY(30px);
 }
 .neoh_fn_totop.active{
-	opacity: 1;
+	opacity: 50%;
 	transform: translateY(0px);
 	visibility: visible;
 }
@@ -4500,7 +4510,8 @@ a.full_link{
 	}
 	/*home*/
 	.neoh_fn_hero .fn_title{
-		font-size: 90px;
+		font-size: 70px;
+		
 	}
 	.neoh_fn_about_item .img_item{
 		width: 40%;

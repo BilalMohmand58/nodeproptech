@@ -1,9 +1,19 @@
 import React from "react";
 import Link from "next/link";
+import Head from "next/head";
 const DetailBlog = ({ blog }) => {
-  const { title, discription, date, image, thumbnail } = blog?.fields;
+  const { title, discription, date, image, thumbnail, slug, shortDiscription } =
+    blog?.fields;
+
+  const articleUrl = `http://localhost:3000//blog/${slug}`;
+
+  const shareUrl = encodeURIComponent(articleUrl);
   return (
     <>
+      <Head>
+        <title>Blog | {title}</title>
+        <meta name="description" content={shortDiscription} />
+      </Head>
       <div className="neoh_fn_blog_single neoh_fn_single">
         {/* Single Background */}
         <div className="single_bg" />
@@ -15,28 +25,28 @@ const DetailBlog = ({ blog }) => {
               <h5 className="label">Share:</h5>
               <ul>
                 <li>
-                  <a href="#">
+                  <a href={`https://twitter.com/intent/tweet?url=${shareUrl}`}>
                     <i className="fn-icon-twitter" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a
+                    href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
+                  >
                     <i className="fn-icon-facebook" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href={`https://www.instagram.com/share?url=${shareUrl}`}>
                     <i className="fn-icon-instagram" />
                   </a>
                 </li>
+
                 <li>
-                  <a href="#">
-                    <i className="fn-icon-pinterest" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fn-icon-behance" />
+                  <a
+                    href={`https://www.linkedin.com/shareArticle?url=${shareUrl}`}
+                  >
+                    <i className="fn-icon-linkedin" />
                   </a>
                 </li>
               </ul>
@@ -80,8 +90,8 @@ const DetailBlog = ({ blog }) => {
                 <div className="single_title">
                   <h2 className="fn_title">{title}</h2>
                   <div className="categories">
-                    <a href="#">Tokens</a>, <a href="#">NFTs</a>,{" "}
-                    <a href="#">Crypto</a>
+                    <a href="/">Technalogy</a>, <a href="/">Node</a>,{" "}
+                    <a href="/">Property</a>
                   </div>
                 </div>
                 {/* !Single Title */}
@@ -116,16 +126,18 @@ const DetailBlog = ({ blog }) => {
                 {/* Author Information Box */}
                 <div className="neoh_fn_author_info">
                   <div className="info_img">
-                    <img src="img/blog/author.jpg" alt="" />
+                    <img
+                      src="https://www.themaidaan.com/_next/static/media/logo.ec4dcbc9.png"
+                      alt=""
+                    />
                   </div>
                   <div className="info_desc">
-                    <h3 className="fn_title">Josephine Sanchez</h3>
+                    <h4 className="fn_title">Maidaan</h4>
                     <p className="fn_desc">
-                      Josephine is a writer, editor, etc.-er who muses about
-                      life, design and travel for friendship, food, fun and
-                      more.
+                      Comprehensive real estate marketing solutions under one
+                      roof.
                     </p>
-                    <ul className="social">
+                    {/* <ul className="social">
                       <li>
                         <a href="#">
                           <i className="fn-icon-twitter" />
@@ -151,20 +163,20 @@ const DetailBlog = ({ blog }) => {
                           <i className="fn-icon-behance" />
                         </a>
                       </li>
-                    </ul>
+                    </ul> */}
                   </div>
                 </div>
                 {/* !Author Information Box */}
                 {/* Tags */}
                 <div className="neoh_fn_tags">
                   <h4 className="label">Tags:</h4>
-                  <a href="#">Tokens</a>
+                  <a href="#">nodeprop</a>
                   <span>,</span>
-                  <a href="#">NFT</a>
+                  <a href="#">proptech</a>
                   <span>,</span>
-                  <a href="#">Featured</a>
+                  <a href="#">technalogy</a>
                   <span>,</span>
-                  <a href="#">Insights</a>
+                  <a href="#">property</a>
                 </div>
                 {/* !Tags */}
               </div>
@@ -184,22 +196,24 @@ const DetailBlog = ({ blog }) => {
                       </div>*/}
                     </div>
                     <div className="afwa_title">
-                      <h3>Maria Blonde</h3>
+                      <h3>Node PropTech</h3>
                       <p>
-                        <a href="mailto:mariablonde@gmail.com">
-                          mariablonde@gmail.com
-                        </a>
+                        <a href="info@themaidaan.com">info@themaidaan.com</a>
                       </p>
                     </div>
                     <div className="afwa_desc">
                       <p>
-                        I want your outer personal style to reflect the inner
-                        you. I understand the importance of creating an interior
-                        that gives a sense of solace
+                        Immerse yourself in cutting-edge technologies and
+                        services that are molding the future of property
+                        investment and management.
                       </p>
                     </div>
                     <div className="afwa_signature">
-                      <img src="../../img/widgets/about-sign.png" alt="" />
+                      <img
+                        src="../../img/logo.png"
+                        alt=""
+                        style={{ width: "180px" }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -213,33 +227,23 @@ const DetailBlog = ({ blog }) => {
                   <div className="neoh_fn_widget_social">
                     <ul>
                       <li>
-                        <a href="#">
-                          <i className="fn-icon-facebook" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
+                        <a href="https://twitter.com/TheNodePropTech">
                           <i className="fn-icon-twitter" />
                         </a>
                       </li>
                       <li>
-                        <a href="#">
-                          <i className="fn-icon-youtube-play" />
+                        <a href="https://www.facebook.com/TheNodePropTech">
+                          <i className="fn-icon-facebook" />
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://www.instagram.com/node.proptech/">
                           <i className="fn-icon-instagram" />
                         </a>
                       </li>
                       <li>
-                        <a href="#">
-                          <i className="fn-icon-soundcloud" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fn-icon-vkontakte" />
+                        <a href="https://www.linkedin.com/company/nodeproptech">
+                          <i className="fn-icon-linkedin" />
                         </a>
                       </li>
                     </ul>

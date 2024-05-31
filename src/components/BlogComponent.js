@@ -4,7 +4,7 @@ import CardBody from "./blog/CardBody";
 const BlogComponent = ({ posts }) => {
   return (
     <>
-      <div className="container">
+      <div className="container" style={{ paddingTop: "30px" }}>
         {/* Moving Blog List Shortcode */}
         <div className="neoh_fn_moving_blog">
           <ul>

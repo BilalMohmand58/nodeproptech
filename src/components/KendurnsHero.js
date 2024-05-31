@@ -46,14 +46,14 @@ const KendurnsHero = () => {
         <div className="container">
           <div className="content">
             <div id="magic" />
-            <h2 className="fn_title" title="Neoh">
-              Node
-            </h2>
             <h3 className="fn_title2" title="Neoh">
-              Prop Tech
+              Product
             </h3>
+
+            {/* <b>Explore Our Projects:</b>*/}
             <p className="fn_desc fn_animated_text">
-              Featured and Fabulous – Unlock the possibilities
+              Find the perfect path to owning premium real estate with just a
+              click.
             </p>
           </div>
         </div>
