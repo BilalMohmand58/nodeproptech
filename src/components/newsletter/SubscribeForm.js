@@ -25,6 +25,7 @@ const SubscribeForm = () => {
   const [message, setMessage] = useState("");
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
+  const [buttonStyle, setButtonStyle] = useState({ background: "black" });
 
   const handleChange = (e) => {
     setEmail(e.target.value);
@@ -57,7 +58,26 @@ const SubscribeForm = () => {
       return () => clearTimeout(timeout);
     }
   }, [success, error]);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setButtonStyle({
+          background: "black",
+          width: "100%",
+        });
+      } else {
+        setButtonStyle({
+          background: "black",
+          width: "auto",
+        });
+      }
+    };
 
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Call once to set initial state
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <div>
       <div className="subscribe_form">
@@ -73,7 +93,7 @@ const SubscribeForm = () => {
             <button
               type="submit"
               className="neoh_fn_button only_text"
-              style={{ background: "black" }}
+              style={buttonStyle}
             >
               <span className="text">
                 {isLoading ? "Subscribing..." : "Subscribe"}

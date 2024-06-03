@@ -58,14 +58,9 @@ const Footer = () => {
             <div className="fb_in">
               <div className="fb_left">
                 <p>
-                  Copyright {new Date().getFullYear()} - Designed &amp;
-                  Developed by{" "}
-                  <a
-                    href="https://www.themaidaan.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    maidaan
+                  Copyright {new Date().getFullYear()} -{" "}
+                  <a href="/" target="_blank" rel="noreferrer">
+                    Node PropTech
                   </a>
                 </p>
               </div>
@@ -76,9 +71,9 @@ const Footer = () => {
                       RoadMap
                     </Link>
                   </li> */}
-                  <li>
+                  {/* <li>
                     <a href="/contact">Contact</a>
-                  </li>
+                  </li> */}
                   {/* <li>
                     <a href="#">Terms &amp; Conditions</a>
                   </li> */}

@@ -3,11 +3,9 @@
 /*	Copyright (c) 2022 Frenify
 /*	Author: Frenify
 /*	This file is made for CURRENT TEMPLATE
-/*
-
-
+/*  
 	List of CSS codes:
-	
+	neoh_fn_pagetitle
 	01) Base
 container
 /*------------------------------------------------------------------*/
@@ -1705,8 +1703,8 @@ a.full_link{
 .neoh_fn_nav{
 	position: fixed;
 	height: 100vh;
-	width: 50%;
-	min-width: 850px;
+	width: 30%;
+	min-width: 450px;
 	z-index: 999;
 	background-color: #111;
 	right: 0;
@@ -1979,6 +1977,7 @@ a.full_link{
 }
 .neoh_fn_pagetitle .bg_color{
 	background-color: rgba(0,0,0,0.85);
+	opacity: 50%;
 }
 .neoh_fn_pagetitle .pt_content{
 	position: relative;
@@ -2727,7 +2726,8 @@ a.full_link{
 .neoh_fn_totop{
 	position: fixed;
 	bottom: 30px;
-	right: 30px;
+	right: 10px;
+	left: 90%;
 	display: block;
 	width: 80px;
 	height: 80px;
@@ -4510,7 +4510,11 @@ a.full_link{
 	}
 	/*home*/
 	.neoh_fn_hero .fn_title{
-		font-size: 70px;
+		font-size: 60px;
+		
+	}
+	.neoh_fn_hero .fn_title2{
+		font-size: 50px;
 		
 	}
 	.neoh_fn_about_item .img_item{
@@ -4757,7 +4761,12 @@ a.full_link{
 		width: 100%;
 	}
 }
+
 @media(max-width: 600px){
+	#fn_title3{
+font-size: 50px;
+letter-spacing: 5px;
+	}
 	.neoh_fn_comments .comment-body{
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;

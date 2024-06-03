@@ -63,7 +63,7 @@ const About = () => {
                       <span className="text">Home</span>
                     </a>
                     <a
-                      href="/"
+                      href="/product"
                       target="_blank"
                       rel="noreferrer"
                       className="neoh_fn_button"

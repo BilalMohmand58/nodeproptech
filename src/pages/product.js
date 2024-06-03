@@ -18,7 +18,7 @@ const Product = () => {
         <title>{title}</title>
         <meta name="description" content={description} />
       </Head>
-      <Layout pageName={"Project"}>
+      <Layout pageName={"Product"}>
         <KendurnsHero />
         {/* !Hero Header */}
         {/* About Section */}
