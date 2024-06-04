@@ -30,8 +30,9 @@ const KendurnsHero = () => {
                 active % 2 ? "kenburnsRight" : "kenburnsLeft"
               }`}
               style={{
-                backgroundImage: `url("img/drops/${active}.jpg")`,
+                backgroundImage: `url("img/drops/${active}.jpeg")`,
                 backgroundColor: "rgba(0, 0, 0, 0)",
+                opacity: "20%",
                 backgroundPosition: "center center",
                 backgroundSize: "cover",
                 animationDuration: "7000ms",
@@ -46,7 +47,7 @@ const KendurnsHero = () => {
         <div className="container">
           <div className="content">
             <div id="magic" />
-            <h3 className="fn_title2" title="Neoh">
+            <h3 className="fn_title2 " id="fn_title3" title="Neoh">
               Product
             </h3>
 

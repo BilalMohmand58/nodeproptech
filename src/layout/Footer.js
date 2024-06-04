@@ -18,9 +18,8 @@ const Footer = () => {
                 </div>
                 <h3 className="fn_title">Join Now For Early Access</h3>
                 <p className="fn_desc">
-                  Morbi non dignissim erat, a blandit felis nec lorem vel orci
-                  varius congue ut vitae est. Nam quis tempus nisl. Fusce
-                  posuere nibh a mi molestie, sit amet ornare
+                  Make an Informed Real Estate Decision Today Sign up and
+                  witness your real estate wealth grow with Node Solutions.
                 </p>
               </div>
               <SubscribeForm />
@@ -58,14 +57,9 @@ const Footer = () => {
             <div className="fb_in">
               <div className="fb_left">
                 <p>
-                  Copyright {new Date().getFullYear()} - Designed &amp;
-                  Developed by{" "}
-                  <a
-                    href="https://www.themaidaan.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    maidaan
+                  Copyright {new Date().getFullYear()} -{" "}
+                  <a href="/" target="_blank" rel="noreferrer">
+                    Node PropTech
                   </a>
                 </p>
               </div>
@@ -76,9 +70,9 @@ const Footer = () => {
                       RoadMap
                     </Link>
                   </li> */}
-                  <li>
+                  {/* <li>
                     <a href="/contact">Contact</a>
-                  </li>
+                  </li> */}
                   {/* <li>
                     <a href="#">Terms &amp; Conditions</a>
                   </li> */}

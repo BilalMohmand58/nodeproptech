@@ -109,14 +109,14 @@ const Header = () => {
         </div>
         {/* Nav Footer */}
         <div className={`nav_footer ${toggle ? "ready" : ""}`}>
-          <div className="nf_left">
+          {/* <div className="nf_left">
             <p>
-              Copyright {new Date().getFullYear()}- Designed &amp; Developed by{" "}
-              <a href="https://themaidaan.com" target="_blank">
-                Maidaan
+              Copyright {new Date().getFullYear()}-
+              <a href="/" target="_blank">
+                Node PropTech
               </a>
             </p>
-          </div>
+          </div> */}
           <div className="nf_right">
             <div className="neoh_fn_social_list">
               <ul>
@@ -156,7 +156,7 @@ const Header = () => {
             </div>
             <div className="trigger">
               <div className="trigger_in" onClick={() => setToggle(!toggle)}>
-                <span className="text">Menu</span>
+                {/* <span className="text">Menu</span> */}
                 <span className="hamb">
                   <span className="hamb_a" />
                   <span className="hamb_b" />

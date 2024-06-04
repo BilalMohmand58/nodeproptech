@@ -4,7 +4,7 @@ const PageBanner = ({ pageName, pagetext, pagetext2 }) => {
     <div className="neoh_fn_pagetitle">
       <div className="bg_overlay">
         <div className="bg_color" />
-        <div className="bg_image" data-bg-img="img/hero/bg.jpg" />
+        <div className="bg_image" data-bg-img="img/hero/bg.jpeg" />
       </div>
       <div className="pt_content">
         <div className="container">

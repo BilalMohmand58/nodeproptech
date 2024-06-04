@@ -45,7 +45,7 @@ const AboutComponent = () => {
                 <span className="icon">
                   <img src="svg/discord.svg" alt="" className="fn__svg" />
                 </span>
-                <span className="text">More About Us</span>
+                <span className="text">About Us</span>{" "}
               </a>
               <a
                 href="/blog"
@@ -56,7 +56,7 @@ const AboutComponent = () => {
                 <span className="icon">
                   <img src="svg/opensea.svg" alt="" className="fn__svg" />
                 </span>
-                <span className="text">Our Blogs</span>
+                <span className="text">Our Blog</span>
               </a>
             </div>
           </div>
@@ -90,9 +90,9 @@ const AboutComponent = () => {
               </p>
             </div>
             <div className="buttons">
-              <Link legacyBehavior href="/product">
+              <Link legacyBehavior href="/contact">
                 <a className="neoh_fn_button only_text">
-                  <span className="text">Our Products</span>
+                  <span className="text">Contact Us</span>
                 </a>
               </Link>
             </div>
