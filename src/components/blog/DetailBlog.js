@@ -5,7 +5,7 @@ const DetailBlog = ({ blog }) => {
   const { title, discription, date, image, thumbnail, slug, shortDiscription } =
     blog?.fields;
 
-  const articleUrl = `http://localhost:3000//blog/${slug}`;
+  const articleUrl = `https://nodeproptech.com/blog/${slug}`;
 
   const shareUrl = encodeURIComponent(articleUrl);
   return (
@@ -124,7 +124,7 @@ const DetailBlog = ({ blog }) => {
                 </div>
                 {/* !Single Description */}
                 {/* Author Information Box */}
-                <div className="neoh_fn_author_info">
+                {/* <div className="neoh_fn_author_info">
                   <div className="info_img">
                     <img
                       src="https://www.themaidaan.com/_next/static/media/logo.ec4dcbc9.png"
@@ -163,11 +163,12 @@ const DetailBlog = ({ blog }) => {
                           <i className="fn-icon-behance" />
                         </a>
                       </li>
-                    </ul> */}
-                  </div>
-                </div>
+                    </ul> 
+                  </div> 
+                </div> */}
                 {/* !Author Information Box */}
                 {/* Tags */}
+                <br />
                 <div className="neoh_fn_tags">
                   <h4 className="label">Tags:</h4>
                   <a href="#">nodeprop</a>
