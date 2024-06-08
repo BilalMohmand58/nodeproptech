@@ -1,10 +1,12 @@
+import WhyChooseus from "@/components/WhyChooseus";
 import { getMetadata } from "@/config/metadata";
 import Layout from "@/layout/Layout";
 import AboutComponent from "@components/AboutComponent";
 import BlogComponent from "@components/BlogComponent";
 import Drops from "@components/Drops";
 import ServicesComponent from "@components/ServicesComponent";
-import WhyChooseUsComponent from "@components/WhyChooseUsComponent";
+import { FaArrowDownLong } from "react-icons/fa6";
+
 import { createClient } from "contentful";
 import Head from "next/head";
 
@@ -42,7 +44,7 @@ const Index = ({ posts }) => {
             <div className="bg_color" />
             {/* !Overlay Color */}
             {/* Overlay Image */}
-            <div className="bg_image" data-bg-img="img/hero/1.jpeg" />
+            <div className="bg_image" data-bg-img="img/hero/bg.jpeg" />
             {/* !Overlay Image */}
           </div>
           {/* Overlay (of hero header) */}
@@ -52,7 +54,7 @@ const Index = ({ posts }) => {
                 <h2 className="fn_title" title="Neoh">
                   Node
                 </h2>
-                <h3 className="fn_title2">Prop Tech</h3>
+                <h3 className="fn_title2">PropTech</h3>
 
                 <p className="fn_desc fn_animated_text">
                   Immerse yourself in cutting-edge technologies and services
@@ -66,8 +68,10 @@ const Index = ({ posts }) => {
               className="neoh_fn_down magic-hover magic-hover__square"
             >
               <span className="text">Scroll Down</span>
-              <span className="icon">
-                <img src="svg/right-arr.svg" alt="" className="fn__svg" />
+
+              <span>
+                <FaArrowDownLong className="icon" />
+                {/* <img src="svg/right-arr.svg" alt="" className="fn__svg" /> */}
               </span>
             </a>
           </div>
@@ -79,7 +83,9 @@ const Index = ({ posts }) => {
         {/* Services Section */}
         <ServicesComponent />
         {/* !Services Section */}
+
         <Drops />
+        <WhyChooseus />
         {/* Investor Section */}
         {/* <WhyChooseUsComponent /> */}
         {/* !Investor Section */}

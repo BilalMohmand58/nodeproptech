@@ -2,6 +2,7 @@ import { getMetadata } from "@/config/metadata";
 import Layout from "@/layout/Layout";
 import PageBanner from "@/layout/PageBanner";
 import Head from "next/head";
+import Link from "next/link";
 
 const About = () => {
   const page = "about";
@@ -47,22 +48,17 @@ const About = () => {
                     </p>
                   </div>
                   <div className="buttons">
-                    <a
-                      href="/"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="neoh_fn_button"
-                    >
-                      <span className="icon">
-                        <img
-                          src="svg/management.svg"
-                          alt=""
-                          className="fn__svg"
-                        />
-                      </span>
-                      <span className="text">Home</span>
-                    </a>
-                    <a
+                    <Link legacyBehavior href="/">
+                      <a className="neoh_fn_button only_text">
+                        <span className="text">Home</span>
+                      </a>
+                    </Link>
+                    <Link legacyBehavior href="//product">
+                      <a className="neoh_fn_button only_text">
+                        <span className="text">Products</span>
+                      </a>
+                    </Link>
+                    {/* <a
                       href="/product"
                       target="_blank"
                       rel="noreferrer"
@@ -76,7 +72,7 @@ const About = () => {
                         />
                       </span>
                       <span className="text">Products</span>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>

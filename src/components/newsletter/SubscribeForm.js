@@ -25,7 +25,7 @@ const SubscribeForm = () => {
   const [message, setMessage] = useState("");
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
-  const [buttonStyle, setButtonStyle] = useState({ background: "black" });
+  const [buttonStyle, setButtonStyle] = useState({ background: "#121212" });
 
   const handleChange = (e) => {
     setEmail(e.target.value);
@@ -62,12 +62,12 @@ const SubscribeForm = () => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
         setButtonStyle({
-          background: "black",
+          background: "#121212",
           width: "100%",
         });
       } else {
         setButtonStyle({
-          background: "black",
+          background: "#121212",
           width: "auto",
         });
       }

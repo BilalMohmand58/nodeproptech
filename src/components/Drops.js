@@ -82,7 +82,8 @@ const Drops = () => {
                     <div className="buttons">
                       <a
                         onClick={() => onClick(1)}
-                        className="neoh_fn_button only_text"
+                        className="neoh_fn_button only_text "
+                        id="dropbutton"
                         style={{ display: "inline-block", marginTop: "20px" }}
                       >
                         <span className="text">Read More</span>
@@ -110,6 +111,7 @@ const Drops = () => {
                       <a
                         onClick={() => onClick(2)}
                         className="neoh_fn_button only_text"
+                        id="dropbutton"
                         style={{ display: "inline-block", marginTop: "20px" }}
                       >
                         <span className="text">Read More</span>
@@ -138,6 +140,7 @@ const Drops = () => {
                       <a
                         onClick={() => onClick(3)}
                         className="neoh_fn_button only_text"
+                        id="dropbutton"
                         style={{ display: "inline-block", marginTop: "20px" }}
                       >
                         <span className="text">Read More</span>
@@ -166,6 +169,7 @@ const Drops = () => {
                       <a
                         onClick={() => onClick(4)}
                         className="neoh_fn_button only_text"
+                        id="dropbutton"
                         style={{ display: "inline-block", marginTop: "20px" }}
                       >
                         <span className="text">Read More</span>

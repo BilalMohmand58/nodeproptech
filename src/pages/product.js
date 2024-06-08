@@ -32,12 +32,14 @@ const Product = () => {
           // }
         />
         {/* About Section */}
-        <AboutComponent />
+        {/* <AboutComponent /> */}
         {/* !About Section */}
+
+        <Drops />
+
         {/* Services Section */}
         <ProductServices />
         {/* !Services Section */}
-        <Drops />
         {/* Investor Section */}
         {/* <WhyChooseUsComponent /> */}
         {/* !Investor Section */}

@@ -1,12 +1,24 @@
 import { Fragment } from "react";
 // import { FaLongArrowAltUp } from "react-icons/fa";
-import { IoIosArrowRoundUp } from "react-icons/io";
+import { FaCircleArrowUp } from "react-icons/fa6";
 const ScrollTop = () => {
   return (
     <Fragment>
       <a href="#" className="neoh_fn_totop">
         {/* <FaLongArrowAltUp size={30} /> */}
-        <IoIosArrowRoundUp size={40} />
+        {/* <FaArrowCircleUp
+          color="#00DDD2"
+          size={30}
+          Background="white"
+          className="arrowicon_topup"
+        /> */}
+        <FaCircleArrowUp
+          color="#00DDD2"
+          size={30}
+          Background="white"
+          className="arrowicon_topup"
+        />
+
         {/* <span className="arrow">
           <img src="svg/right-arr.svg" alt="" className="fn__svg" />
         </span> */}
