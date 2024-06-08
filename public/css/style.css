@@ -4,15 +4,13 @@
 /*	Author: Frenify
 /*	This file is made for CURRENT TEMPLATE
 /*  
-	List of CSS codes:
-	neoh_fn_pagetitle
 	01) Base
-container
+
 /*------------------------------------------------------------------*/
 /*	01) Base
 /*------------------------------------------------------------------*/
 :root{
-	--sbc: #0a0a0a;
+	--sbc: #0e0e0e;
 	--mc: #00DDD2;
 	--hc: #fff;
 	--bc: #ccc;
@@ -171,7 +169,8 @@ a.full_link{
 	margin-right: auto;
 }
 .mw_650{max-width: 650px;}
-.mw_500{max-width: 500px;}
+.mw_500{width: 500px;}
+
 /*------------------------------------------------------------------*/
 /*	02) Site Structure
 /*------------------------------------------------------------------*/
@@ -210,7 +209,7 @@ a.full_link{
 	transition: all .3s ease;
 }
 .neoh_fn_header.fixer{
-	background-color: #111;
+	background-color: #1b1b1b;
 	padding: 20px 0;
 }
 .neoh_fn_header .header_in{
@@ -406,9 +405,9 @@ a.full_link{
 	max-width: 500px;
 	margin: 0 auto;
 	padding: 0;
-	font-size: 120px;
+	font-size: 100px;
 	text-transform: uppercase;
-	letter-spacing: 35px; /* after changing this value, don't forget to change left value */
+	letter-spacing: 25px; /* after changing this value, don't forget to change left value */
 	line-height: 1;
 	margin-bottom: 10px;
 	/* font-family: neon; */
@@ -423,7 +422,7 @@ a.full_link{
 	padding: 0;
 	font-size: 60px;
 	text-transform: uppercase;
-	letter-spacing: 35px; /* after changing this value, don't forget to change left value */
+	letter-spacing: 25px; /* after changing this value, don't forget to change left value */
 	line-height: 1;
 	margin-bottom: 10px;
 	/* font-family: neon; */
@@ -587,7 +586,7 @@ a.full_link{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: #3b373c;
+	background-color: var(--mc);
 	left: 0;
 	top: 0;
 	transform: rotate(5deg);
@@ -663,12 +662,14 @@ a.full_link{
 	position: relative;
 	width: 140px;
 	height: 10px;
+	color: var(--mc);
+
 }
 .neoh_fn_title .line span{
 	width: 140px;
 	display: block;
 	height: 2px;
-	background-color: var(--extra-color);
+	background-color: var(--mc);
 	position: absolute;
 	top: 4px;
 }
@@ -679,13 +680,13 @@ a.full_link{
 	height: 10px;
 	left: 50%;
 	margin-left: -2px;
-	background-color: var(--extra-color);
+	background-color: var(--mc);
 	border-radius: 10px;
 }
 .neoh_fn_title .line span:after,
 .neoh_fn_title .line span:before{
 	width: 2px;
-	background-color: var(--extra-color);
+	background-color:  var(--mc);
 	position: absolute;
 	content: '';
 	z-index: 3;
@@ -1001,7 +1002,7 @@ a.full_link{
     left: 0;
     right: 0;
     bottom: 0;
-    border: 2px solid var(--extra-color);
+    border: 2px solid var(--mc);
     border-radius: 10px;
 	transition: all .3s ease;
 }
@@ -1028,6 +1029,9 @@ a.full_link{
 	padding: 22px 20px 21px;
 	position: relative;
 	z-index: 5;
+}
+#dropbutton{
+	border-color: var(--mc);
 }
 .neoh_fn_drops .fn_title{
 	margin: 0;
@@ -1480,7 +1484,8 @@ a.full_link{
 	margin-bottom: 26px;
 }
 .neoh_fn_moving_blog .fn_date span{
-	background-color: #252525;
+	background-color: var(--mc);
+	color: #0a0a0a;
     line-height: 30px;
     text-align: center;
     display: block;
@@ -1501,7 +1506,7 @@ a.full_link{
     border-color: transparent;
     transition: all .3s ease;
 	border-width: 30px 0 0 12px;
-    border-left-color: #252525;
+    border-left-color: var(--mc);
     left: 100%;
     top: 0;
 }
@@ -1691,7 +1696,8 @@ a.full_link{
 	width: inherit;
 }
 .neoh_fn_social_list a:hover{
-	color: var(--hc);
+	color:  var(--mc);
+	
 }
 
 
@@ -2727,7 +2733,8 @@ a.full_link{
 	position: fixed;
 	bottom: 30px;
 	right: 10px;
-	left: 90%;
+	margin-right: 10px;
+	left: 95%;
 	display: block;
 	width: 80px;
 	height: 80px;
@@ -2739,8 +2746,13 @@ a.full_link{
 	transition: all .3s ease;
 	transform: translateY(30px);
 }
+.arrowicon_topup{
+	background-color: white;
+	border: var(--mc);
+	border-radius: 50%;
+}
 .neoh_fn_totop.active{
-	opacity: 50%;
+	opacity: 100%;
 	transform: translateY(0px);
 	visibility: visible;
 }
@@ -2993,6 +3005,10 @@ a.full_link{
 	background-color: #111;
 	padding: 145px 0 147px;
 }
+.contact_container {
+	display: flex;
+
+  }
 .contact_form{
 	margin-bottom: 45px;
 }
@@ -3076,18 +3092,18 @@ a.full_link{
 .neoh_fn_contact_page .desc_holder p:last-child{
 	margin-bottom: 0;
 }
-.neoh_fn_contact_page .info_list ul{
+.neoh_fn_contact_page .desc_holder ul{
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
-.neoh_fn_contact_page .info_list li{
+.neoh_fn_contact_page .desc_holder li{
 	margin-bottom: 37px;
 }
-.neoh_fn_contact_page .info_list li:last-child{
+.neoh_fn_contact_page .desc_holder li:last-child{
 	margin-bottom: 0px;
 }
-.neoh_fn_contact_page .info_list .label{
+.neoh_fn_contact_page .desc_holder .label{
 	font-size: 14px;
 	font-family: var(--hff);
 	letter-spacing: .5px;
@@ -3095,23 +3111,22 @@ a.full_link{
 	color: #777;
 	margin-bottom: 8px;
 }
-.neoh_fn_contact_page .info_list .value{
+.neoh_fn_contact_page .desc_holder .value{
 	margin: 0;
 	padding: 0;
 	font-size: 30px;
 }
-.neoh_fn_contact_page .info_list .email{
+.neoh_fn_contact_page .desc_holder .email{
 	font-size: 18px;
 	text-decoration: none;
 	color: #aaa;
 	border-bottom: 1px solid #414141;
 	margin-top: 5px;
 }
-.neoh_fn_contact_page .info_list .email:hover{
+.neoh_fn_contact_page .desc_holder .email:hover{
 	color: #ccc;
 	border-bottom-color: #aaa;
 }
-
 
 
 
@@ -4732,6 +4747,8 @@ a.full_link{
 	.neoh_fn_investor li{
 		width: 50%;
 	}
+
+
 	.neoh_fn_product_modal{
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
@@ -4750,6 +4767,12 @@ a.full_link{
 	}
 	.neoh_fn_modal{
 		padding: 20px;
+	}
+	.neoh_fn_totop{
+		
+		
+		left: 90%;
+		
 	}
 	/*about*/
 	.neoh_fn_gualist li,
@@ -4784,7 +4807,9 @@ letter-spacing: 5px;
 	.neoh_fn_services li{width: 100%;}
 	.neoh_fn_services li:nth-of-type(2n+1){margin-top: 0;}
 	.neoh_fn_title .fn_title{font-size: 26px;}
+	.mw_500{width:400px;}
 }
+
 @media(max-width: 480px){
 	.neoh_fn_investor li{width: 100%;}
 	.neoh_fn_footer .subscribe_in{
@@ -4814,6 +4839,7 @@ letter-spacing: 5px;
 	.neoh_fn_footer .fb_left{
 		margin-bottom: 10px;
 	}
+	.mw_500{width:310px;}
 }
 @media(max-width: 320px){
 	.neoh_fn_timeline .t_item{
