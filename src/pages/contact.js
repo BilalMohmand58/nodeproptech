@@ -1,4 +1,5 @@
 import ContactForm from "@/components/contact/ContactForm";
+import ContactInfo from "@/components/contact/ContactInfo";
 import { getMetadata } from "@/config/metadata";
 import Layout from "@/layout/Layout";
 import PageBanner from "@/layout/PageBanner";
@@ -23,11 +24,25 @@ const Contact = () => {
             "Fill out the form below, and our team will contact you immediately"
           }
         />
-        <div className="neoh_fn_contact_page">
+
+        <section id="about">
           <div className="container">
-            <ContactForm />
+            <div className="neoh_fn_about_item">
+              <div>
+                <ContactForm />
+              </div>
+              <div className="content_item">
+                <div className="neoh_fn_title" data-align="left">
+                  <h3 className="fn_title">Node PropTech</h3>
+                  <div className="line">
+                    <span />
+                  </div>
+                </div>
+                <ContactInfo />
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
       </Layout>
     </>
   );

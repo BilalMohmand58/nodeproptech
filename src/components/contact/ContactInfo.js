@@ -3,13 +3,13 @@ import React from "react";
 const ContactInfo = () => {
   return (
     <>
-      <div className="desc_holder">
-        <p>
-          Make an Informed Real Estate Decision Today Sign up and witness your
-          real estate wealth grow with Node Solutions.
-        </p>
-      </div>
       <div className="info_list">
+        <div className="desc_holder">
+          <p>
+            Make an Informed Real Estate Decision Today Sign up and witness your
+            real estate wealth grow with Node Solutions.
+          </p>
+        </div>
         <ul>
           {/* <li>
           <p className="label">Address</p>
@@ -18,15 +18,15 @@ const ContactInfo = () => {
 
           <li>
             <p className="label">Email</p>
-            <h3 className="value">
+            <h5 className="value">
               <a href="#">info@nodeproptech.com</a>
-            </h3>
+            </h5>
           </li>
           <li>
             <p className="label">Support</p>
-            <h3 className="value">
+            <h5 className="value">
               <a href="#">support@nodeproptech.com</a>
-            </h3>
+            </h5>
           </li>
           <li>
             <p className="label">Address</p>
