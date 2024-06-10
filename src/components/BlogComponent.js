@@ -22,7 +22,7 @@ const BlogComponent = ({ posts }) => {
           <div className="neoh_fn_moving_blog">
             <ul>
               {posts.slice(0, 3).map((post) => (
-                <li key={post.id}>
+                <li key={post?.fields.slug}>
                   <CardBody post={post} />
                 </li>
               ))}

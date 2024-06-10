@@ -55,7 +55,7 @@ const About = () => {
                         <span className="text">Home</span>
                       </a>
                     </Link>
-                    <Link legacyBehavior href="//product">
+                    <Link legacyBehavior href="/product">
                       <a className="neoh_fn_button only_text">
                         <span className="text">Products</span>
                       </a>
