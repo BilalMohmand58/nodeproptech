@@ -15,8 +15,8 @@ const ScrollTop = () => {
         <FaCircleArrowUp
           color="#00DDD2"
           size={30}
-          Background="white"
           className="arrowicon_topup"
+          style={{ background: "white" }}
         />
 
         {/* <span className="arrow">

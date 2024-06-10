@@ -10,7 +10,7 @@ const BlogCard = ({ posts }) => {
         <div className="neoh_fn_moving_blog">
           <ul>
             {posts.map((post) => (
-              <li key={post.id}>
+              <li key={post?.fields.slug}>
                 <CardBody post={post} />
               </li>
             ))}
