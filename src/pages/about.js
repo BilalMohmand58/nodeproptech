@@ -146,11 +146,9 @@ const About = () => {
                   </div>
                   <div className="desc">
                     <p>
-                      <p>
-                        Unlock an affordable and flexible real estate journey.
-                        Enjoy property ownership through our streamlined
-                        one-window projects.
-                      </p>
+                      Unlock an affordable and flexible real estate journey.
+                      Enjoy property ownership through our streamlined
+                      one-window projects.
                     </p>
                     1. Sign-in <br /> 2. Invest <br /> 3. Monitor progress
                     <p></p>
