@@ -16,7 +16,7 @@ const About = () => {
         <meta name="description" content={description} />
       </Head>
       <Layout pageName={"About"}>
-        <PageBanner pageName={"About"} />
+        <PageBanner pageName={"About Us"} />
         <div className="neoh_fn_aboutpage">
           {/* Information Section */}
           <section id="information">
