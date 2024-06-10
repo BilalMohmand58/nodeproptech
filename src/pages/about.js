@@ -4,6 +4,8 @@ import PageBanner from "@/layout/PageBanner";
 import Head from "next/head";
 import Link from "next/link";
 
+import { CiCircleCheck } from "react-icons/ci";
+
 const About = () => {
   const page = "about";
   const { title, description } = getMetadata(page);
@@ -83,11 +85,12 @@ const About = () => {
                   <li>
                     <div className="item">
                       <span className="line" />
-                      <img
+                      <CiCircleCheck color="#00DDD2" className="fn__svg" />
+                      {/* <img
                         src="svg/search-engine.svg"
                         alt=""
                         className="fn__svg"
-                      />
+                      /> */}
                       <h3 className="fn_title">Our Mission </h3>
                       <p className="fn_desc fn_animated_text">
                         To revolutionize the real estate industry by leveraging
@@ -99,11 +102,12 @@ const About = () => {
                   <li>
                     <div className="item">
                       <span className="line" />
-                      <img
+                      <CiCircleCheck color="#00DDD2" className="fn__svg" />
+                      {/* <img
                         src="svg/management.svg"
                         alt=""
                         className="fn__svg"
-                      />
+                      /> */}
                       <h3 className="fn_title">Our Vision </h3>
                       <p className="fn_desc fn_animated_text">
                         To make real estate investment accessible to all,
@@ -115,7 +119,8 @@ const About = () => {
                   <li>
                     <div className="item">
                       <span className="line" />
-                      <img src="svg/discord.svg" alt="" className="fn__svg" />
+                      <CiCircleCheck color="#00DDD2" className="fn__svg" />
+                      {/* <img src="svg/discord.svg" alt="" className="fn__svg" /> */}
                       <h3 className="fn_title">Our Values</h3>
                       <p className="fn_desc fn_animated_text">
                         Integrity, innovation, and inclusivity drive us to
