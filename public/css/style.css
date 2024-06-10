@@ -5,7 +5,7 @@
 /*	This file is made for CURRENT TEMPLATE
 /*  
 	01) Base
-
+neoh_fn_gualist1
 /*------------------------------------------------------------------*/
 /*	01) Base
 /*------------------------------------------------------------------*/
@@ -169,7 +169,7 @@ a.full_link{
 	margin-right: auto;
 }
 .mw_650{max-width: 650px;}
-.mw_500{width: 500px;}
+.mw_500{width: 550px;}
 
 /*------------------------------------------------------------------*/
 /*	02) Site Structure
@@ -3128,6 +3128,67 @@ a.full_link{
 	border-bottom-color: #aaa;
 }
 
+.neoh_fn_gualist1{
+	margin-bottom: 10px;
+}
+
+.neoh_fn_gualist1 .item{
+	width: 60%;
+	margin: auto;
+	border: 2px solid var(--extra-color);
+	border-radius: 5px;
+	padding: 50px 4px 4px;
+	position: relative;
+	
+	height: 100%;
+    transition: all .3s ease;
+}
+
+
+.neoh_fn_gualist1 .line{
+	display: block;
+	width: 150px;
+	height: 10px;
+	position: absolute;
+	background-color: #252525;
+	top: 0;
+	left: 50%;
+	margin-left: -75px;
+    transition: all .3s ease;
+}
+.neoh_fn_gualist1 .line:before,
+.neoh_fn_gualist1 .line:after{
+	content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    transition: all .3s ease;
+	top: 0;
+}
+.neoh_fn_gualist1 .line:before{
+	border-width: 0 10px 10px 0;
+	border-right-color: #252525;
+	right: 100%;
+}
+.neoh_fn_gualist1 .line:after{
+	border-width: 10px 10px 0 0;
+	border-top-color: #252525;
+	left: 100%;
+}
+.neoh_fn_gualist1 .item:hover{
+	border-color: var(--mc);
+}
+.neoh_fn_gualist1 .item:hover .line{
+	background-color: var(--mc);
+}
+.neoh_fn_gualist1 .item:hover .line:before{
+	border-right-color: var(--mc);
+}
+.neoh_fn_gualist1 .item:hover .line:after{
+	border-top-color: var(--mc);
+}
 
 
 /* Same Single Pages */
@@ -4600,6 +4661,11 @@ a.full_link{
 	}
 	.neoh_fn_team .team_item{
 		width: 50%;
+	}
+	/* contact */
+	.neoh_fn_gualist1 .item{
+		width: 100%;
+		
 	}
 }
 @media(max-width: 900px){
