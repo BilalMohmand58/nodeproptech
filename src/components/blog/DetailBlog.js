@@ -1,13 +1,26 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+
 const DetailBlog = ({ blog }) => {
-  const { title, discription, date, image, thumbnail, slug, shortDiscription } =
-    blog?.fields;
+  if (!blog || !blog.fields) {
+    return <p>Loading...</p>; // or handle this case appropriately
+  }
+
+  const {
+    title,
+    discription, // assuming this is a rich text field
+    date,
+    image,
+    thumbnail,
+    slug,
+    shortDiscription,
+  } = blog.fields;
 
   const articleUrl = `https://nodeproptech.com/blog/${slug}`;
-
   const shareUrl = encodeURIComponent(articleUrl);
+
   return (
     <>
       <Head>
@@ -41,7 +54,6 @@ const DetailBlog = ({ blog }) => {
                     <i className="fn-icon-instagram" />
                   </a>
                 </li>
-
                 <li>
                   <a
                     href={`https://www.linkedin.com/shareArticle?url=${shareUrl}`}
@@ -53,11 +65,11 @@ const DetailBlog = ({ blog }) => {
             </div>
             <div className="neoh_fn_breadcrumbs">
               <p>
-                <Link legacyBehavior href="/">
+                <Link href="/" legacyBehavior>
                   Home
                 </Link>
                 <span className="separator">/</span>
-                <Link legacyBehavior href="/blog">
+                <Link href="/blog" legacyBehavior>
                   Blog
                 </Link>
                 <span className="separator">/</span>
@@ -65,13 +77,18 @@ const DetailBlog = ({ blog }) => {
               </p>
             </div>
             <div className="single_img">
-              <img src={"https:" + image?.fields?.file?.url} alt="" />
+              {image &&
+                image.fields &&
+                image.fields.file &&
+                image.fields.file.url && (
+                  <img src={"https:" + image.fields.file.url} alt={title} />
+                )}
             </div>
             {/* Page With Sidebar */}
             <div className="neoh_fn_wsidebar">
               {/* Left Sidebar */}
               <div className="sidebar_left">
-                {/* Mini Items  */}
+                {/* Mini Items */}
                 <div className="neoh_fn_minis">
                   <div className="m_item">
                     <a href="#">{date}</a>
@@ -81,11 +98,8 @@ const DetailBlog = ({ blog }) => {
                       By <a href="#">Admin</a>
                     </span>
                   </div>
-                  {/* <div className="m_item">
-                    <a href="#comments">3 Comments</a>
-                  </div> */}
                 </div>
-                {/* !Mini Items  */}
+                {/* !Mini Items */}
                 {/* Single Title */}
                 <div className="single_title">
                   <h2 className="fn_title">{title}</h2>
@@ -97,76 +111,9 @@ const DetailBlog = ({ blog }) => {
                 {/* !Single Title */}
                 {/* Single Description */}
                 <div className="single_desc">
-                  <p>{discription}</p>
-
-                  {/* <p>
-                    Suspendisse dignissim ultricies iaculis. Suspendisse
-                    ultrices turpis mi, non tincidunt orci interdum tempor.
-                    Praesent venenatis, lorem egestas consequat tempor, nunc
-                    neque venenatis risus, vitae interdum ipsum ipsum eget
-                    purus. Proin ac leo non est imperdiet commodo. Donec dictum
-                    augue ut odio feugiat vulputate. Pellentesque ultricies
-                    augue in posuere ornare. Pellentesque pretium non nunc ac
-                    sodales.
-                  </p>
-                  <p>
-                    Nam et malesuada ante, in convallis libero. Aenean
-                    sollicitudin egestas ante, eget porttitor leo fringilla sit
-                    amet. Nam cursus neque ligula, in egestas elit porttitor
-                    vel. Vestibulum ultricies tempus orci a auctor. Curabitur
-                    sed pretium lacus, eget cursus dui. Aliquam at ex sit amet
-                    urna interdum dignissim vel non dolor. Pellentesque mi nibh,
-                    sollicitudin at neque id, tincidunt molestie lorem. Nulla
-                    facilisi. Phasellus viverra mi ut sapien efficitur, sit amet
-                    suscipit lorem commodo. Interdum et malesuada fames ac ante
-                    ipsum primis in faucibus.
-                  </p> */}
+                  {discription && documentToReactComponents(discription)}
                 </div>
                 {/* !Single Description */}
-                {/* Author Information Box */}
-                {/* <div className="neoh_fn_author_info">
-                  <div className="info_img">
-                    <img
-                      src="https://www.themaidaan.com/_next/static/media/logo.ec4dcbc9.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="info_desc">
-                    <h4 className="fn_title">Maidaan</h4>
-                    <p className="fn_desc">
-                      Comprehensive real estate marketing solutions under one
-                      roof.
-                    </p>
-                    {/* <ul className="social">
-                      <li>
-                        <a href="#">
-                          <i className="fn-icon-twitter" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fn-icon-facebook" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fn-icon-instagram" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fn-icon-pinterest" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fn-icon-behance" />
-                        </a>
-                      </li>
-                    </ul> 
-                  </div> 
-                </div> */}
-                {/* !Author Information Box */}
                 {/* Tags */}
                 <br />
                 <div className="neoh_fn_tags">
@@ -187,15 +134,7 @@ const DetailBlog = ({ blog }) => {
                 {/* Widget (about) */}
                 <div className="widget">
                   <div className="neoh_fn_widget_about">
-                    <div className="about_img">
-                      {/* <div className="img_inner">
-                        <img src="../../img/thumbs/1-1.jpg" alt="" />
-                         <div
-                          className="abs_img"
-                          data-bg-img="../../img/widgets/about.jpg"
-                        /> 
-                      </div>*/}
-                    </div>
+                    <div className="about_img" />
                     <div className="afwa_title">
                       <h3>Node PropTech</h3>
                       <p>
@@ -253,32 +192,14 @@ const DetailBlog = ({ blog }) => {
                 {/* !Widget (social) */}
                 {/* Widget (Banner) */}
                 <div className="widget widget-banner">
-                  <img src={"https:" + thumbnail?.fields?.file?.url} alt="" />
+                  {thumbnail &&
+                    thumbnail.fields &&
+                    thumbnail.fields.file &&
+                    thumbnail.fields.file.url && (
+                      <img src={"https:" + thumbnail.fields.file.url} alt="" />
+                    )}
                 </div>
                 {/* !Widget (Banner) */}
-                {/* Widget (Subscribe) */}
-                {/* <div className="widget widget-subscribe">
-                  <div className="neoh_fn_widget_subscribe">
-                    <div className="desc">
-                      <img
-                        src="../../svg/email.svg"
-                        alt=""
-                        className="fn__svg"
-                      />
-                      <h3 className="fn_title">Newsletter</h3>
-                      <p className="fn_desc">
-                        Get to know about the latest trends, the best in crypto.
-                      </p>
-                    </div>
-                    <div className="form">
-                      <input type="text" placeholder="Email Address" />
-                      <a href="#" className="neoh_fn_button only_text">
-                        <span className="text">Subscribe</span>
-                      </a>
-                    </div>
-                  </div>
-                </div> */}
-                {/* !Widget (Subscribe) */}
               </div>
               {/* !Right Sidebar */}
             </div>
