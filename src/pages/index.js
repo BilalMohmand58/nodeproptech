@@ -44,7 +44,7 @@ const Index = ({ posts }) => {
             <div className="bg_color" />
             {/* !Overlay Color */}
             {/* Overlay Image */}
-            <div className="bg_image" data-bg-img="img/hero/bg.jpeg" />
+            <div className="bg_image" data-bg-img="img/hero/1.jpeg" />
             {/* !Overlay Image */}
           </div>
           {/* Overlay (of hero header) */}

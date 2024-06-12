@@ -1,6 +1,7 @@
 import { Fragment } from "react";
+import { IoIosArrowRoundUp } from "react-icons/io";
 // import { FaLongArrowAltUp } from "react-icons/fa";
-import { FaCircleArrowUp } from "react-icons/fa6";
+
 const ScrollTop = () => {
   return (
     <Fragment>
@@ -12,12 +13,12 @@ const ScrollTop = () => {
           Background="white"
           className="arrowicon_topup"
         /> */}
-        <FaCircleArrowUp
-          color="#00DDD2"
-          size={30}
+        <IoIosArrowRoundUp color="#00DDD2" size={30} />
+        {/* <IoArrowUpCircle
+          
           className="arrowicon_topup"
           style={{ background: "white" }}
-        />
+        /> */}
 
         {/* <span className="arrow">
           <img src="svg/right-arr.svg" alt="" className="fn__svg" />

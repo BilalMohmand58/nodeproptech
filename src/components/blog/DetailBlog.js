@@ -24,7 +24,7 @@ const DetailBlog = ({ blog }) => {
   return (
     <>
       <Head>
-        <title>Blog | {title}</title>
+        <title>{title}</title>
         <meta name="description" content={shortDiscription} />
       </Head>
       <div className="neoh_fn_blog_single neoh_fn_single">
