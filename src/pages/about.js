@@ -119,7 +119,7 @@ const About = () => {
                   <li>
                     <div className="item">
                       <span className="line" />
-                      <CiCircleCheck color="#00DDD2" className="fn__svg" />
+                      <CiCircleCheck color="#00DDD2" className="fn__svg  " />
                       {/* <img src="svg/discord.svg" alt="" className="fn__svg" /> */}
                       <h3 className="fn_title">Our Values</h3>
                       <p className="fn_desc fn_animated_text">

@@ -3,9 +3,9 @@
 /*	Copyright (c) 2022 Frenify
 /*	Author: Frenify
 /*	This file is made for CURRENT TEMPLATE
-/*  
+/* 
 	01) Base
-neoh_fn_gualist1
+
 /*------------------------------------------------------------------*/
 /*	01) Base
 /*------------------------------------------------------------------*/
@@ -60,12 +60,9 @@ body {
 }
 .fn__svg {
   fill: currentcolor;
-  width: 22px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   opacity: 100;
-  background-color: #00ddd2;
-  padding: 15px;
-  border-radius: 50%;
 }
 .replaced-svg {
   opacity: 1;
@@ -200,19 +197,6 @@ a.full_link {
   max-width: 650px;
 }
 .mw_500 {
-  max-width: 500px;
-}
-
-.mw_650 {
-  max-width: 650px;
-}
-.mw_500 {
-  width: 500px;
-}
-.mw_650 {
-  max-width: 650px;
-}
-.mw_500 {
   width: 550px;
 }
 
@@ -252,11 +236,6 @@ a.full_link {
   left: 0;
   right: 0;
   transition: all 0.3s ease;
-}
-
-.neoh_fn_header.fixer {
-  background-color: #111;
-  padding: 20px 0;
 }
 .neoh_fn_header.fixer {
   background-color: #1b1b1b;
@@ -458,37 +437,6 @@ a.full_link {
   font-family: neon;
   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
 }
-
-.neoh_fn_hero .fn_title {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 0;
-  font-size: 120px;
-  text-transform: uppercase;
-  letter-spacing: 35px; /* after changing this value, don't forget to change left value */
-  line-height: 1;
-  margin-bottom: 10px;
-  /* font-family: neon; */
-  transform: translateZ(0);
-  overflow: hidden;
-  position: relative;
-  left: 17px; /* because of letter spacing, if you change letter spacing, don't forget to change its value also */
-}
-.neoh_fn_hero .fn_title2 {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 0;
-  font-size: 60px;
-  text-transform: uppercase;
-  letter-spacing: 35px; /* after changing this value, don't forget to change left value */
-  line-height: 1;
-  margin-bottom: 10px;
-  /* font-family: neon; */
-  transform: translateZ(0);
-  overflow: hidden;
-  position: relative;
-  left: 17px; /* because of letter spacing, if you change letter spacing, don't forget to change its value also */
-}
 .neoh_fn_hero .fn_title {
   max-width: 500px;
   margin: 0 auto;
@@ -667,17 +615,6 @@ a.full_link {
   width: 50%;
   position: relative;
 }
-
-.neoh_fn_about_item .img_item:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #3b373c;
-  left: 0;
-  top: 0;
-  transform: rotate(5deg);
-}
 .neoh_fn_about_item .img_item:after {
   content: "";
   position: absolute;
@@ -754,41 +691,6 @@ a.full_link {
   padding: 0;
   font-size: 36px;
   margin-bottom: 6px;
-}
-
-.neoh_fn_title .line {
-  position: relative;
-  width: 140px;
-  height: 10px;
-}
-.neoh_fn_title .line span {
-  width: 140px;
-  display: block;
-  height: 2px;
-  background-color: var(--extra-color);
-  position: absolute;
-  top: 4px;
-}
-.neoh_fn_title .line:after {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 10px;
-  left: 50%;
-  margin-left: -2px;
-  background-color: var(--extra-color);
-  border-radius: 10px;
-}
-.neoh_fn_title .line span:after,
-.neoh_fn_title .line span:before {
-  width: 2px;
-  background-color: var(--extra-color);
-  position: absolute;
-  content: "";
-  z-index: 3;
-  margin-top: -3px;
-  height: 6px;
-  top: 50%;
 }
 .neoh_fn_title .line {
   position: relative;
@@ -963,6 +865,7 @@ a.full_link {
   display: block;
   z-index: 6;
   color: #111;
+  background: transparent;
 }
 .top_divider {
   top: -1px;
@@ -1113,19 +1016,6 @@ a.full_link {
   width: 100%;
   position: relative;
 }
-
-.neoh_fn_drops .item:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 2px solid var(--extra-color);
-  border-radius: 10px;
-  transition: all 0.3s ease;
-}
 .neoh_fn_drops .item:after {
   content: "";
   position: absolute;
@@ -1161,12 +1051,6 @@ a.full_link {
   padding: 22px 20px 21px;
   position: relative;
   z-index: 5;
-}
-
-.neoh_fn_drops .fn_title {
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
 }
 #dropbutton {
   border-color: var(--mc);
@@ -4808,190 +4692,6 @@ a.full_link {
     margin-bottom: 10px;
   }
 }
-
-@media (max-width: 768px) {
-  /* RoadMap Single */
-  .neoh_fn_mosaic ul {
-    margin-left: -10px;
-  }
-  .neoh_fn_mosaic li {
-    padding-left: 10px;
-    margin-bottom: 10px;
-  }
-  /* Blog Single */
-  .neoh_fn_footer .footer_top .fn_title,
-  .neoh_fn_single .single_title .fn_title {
-    font-size: 30px;
-  }
-  .neoh_fn_author_info {
-    padding: 30px;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
-    -ms-align-items: flex-start;
-    align-items: flex-start;
-  }
-  .neoh_fn_author_info .info_img {
-    margin-right: 0;
-    margin-bottom: 26px;
-    width: inherit;
-  }
-  .neoh_fn_pnb .item {
-    padding: 30px 0;
-  }
-  .neoh_fn_pnb .item:hover {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .neoh_fn_pnb .item .fn_title {
-    font-size: 20px;
-  }
-  .neoh_fn_about_item {
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
-  }
-  .neoh_fn_about_item.reverse {
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
-  }
-  .neoh_fn_about_item .img_item {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-  .neoh_fn_about_item .content_item {
-    width: 100%;
-    padding: 0;
-  }
-  .neoh_fn_about_item.reverse .content_item {
-    padding: 0;
-  }
-  .neoh_fn_title .fn_title {
-    font-size: 30px;
-  }
-  .neoh_fn_timeline .t_item {
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
-  }
-  .neoh_fn_timeline .t_item_img {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .neoh_fn_timeline .t_item_info {
-    width: 100%;
-    padding-left: 0;
-  }
-  .neoh_fn_investor li {
-    width: 50%;
-  }
-  .neoh_fn_product_modal {
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
-  }
-  .neoh_fn_product_modal .img_item {
-    width: 100%;
-    padding-right: 0;
-    margin-bottom: 30px;
-  }
-  .neoh_fn_product_modal .content_item {
-    width: 100%;
-    padding-left: 0;
-  }
-  .neoh_fn_modal {
-    padding: 20px;
-  }
-  /*about*/
-  .neoh_fn_gualist li,
-  .neoh_fn_team .team_item {
-    width: 100%;
-  }
-  /*collection*/
-  .neoh_fn_drops li {
-    width: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  #fn_title3 {
-    font-size: 50px;
-    letter-spacing: 5px;
-  }
-  .neoh_fn_comments .comment-body {
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
-  }
-  .neoh_fn_comments .comment-avatar {
-    margin-right: 0;
-    margin-bottom: 14px;
-  }
-  .neoh_fn_comments .input-item.half-item,
-  .neoh_fn_drops li,
-  .neoh_fn_moving_blog li,
-  .neoh_fn_services li {
-    width: 100%;
-  }
-  .neoh_fn_services li:nth-of-type(2n + 1) {
-    margin-top: 0;
-  }
-  .neoh_fn_title .fn_title {
-    font-size: 26px;
-  }
-}
-@media (max-width: 480px) {
-  .neoh_fn_investor li {
-    width: 100%;
-  }
-  .neoh_fn_footer .subscribe_in {
-    padding: 0;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
-  }
-  .neoh_fn_footer .subscribe_form input[type="text"] {
-    margin-right: 0;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  .neoh_fn_footer .subscribe_form a {
-    width: 100%;
-  }
-  .neoh_fn_footer .fb_in {
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
-    justify-content: flex-start;
-    -ms-align-items: flex-start;
-    align-items: flex-start;
-  }
-  .neoh_fn_footer .fb_left {
-    margin-bottom: 10px;
-  }
-}
-@media (max-width: 320px) {
-  .neoh_fn_timeline .t_item {
-    padding: 15px;
-  }
-}
 @media (max-width: 768px) {
   /* RoadMap Single */
   .neoh_fn_mosaic ul {
@@ -5179,5 +4879,10 @@ a.full_link {
   }
   .mw_500 {
     width: 310px;
+  }
+}
+@media (max-width: 320px) {
+  .neoh_fn_timeline .t_item {
+    padding: 15px;
   }
 }

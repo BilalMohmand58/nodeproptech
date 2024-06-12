@@ -51,9 +51,7 @@ const Index = ({ posts }) => {
           <div className="hero_content">
             <div className="container">
               <div className="content">
-                <h2 className="fn_title" title="Neoh">
-                  Node
-                </h2>
+                <h2 className="fn_title">Node</h2>
                 <h3 className="fn_title2">PropTech</h3>
 
                 <p className="fn_desc fn_animated_text">
