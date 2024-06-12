@@ -55,7 +55,7 @@ const About = () => {
                         <span className="text">Home</span>
                       </a>
                     </Link>
-                    <Link legacyBehavior href="//product">
+                    <Link legacyBehavior href="/product">
                       <a className="neoh_fn_button only_text">
                         <span className="text">Products</span>
                       </a>
@@ -146,11 +146,9 @@ const About = () => {
                   </div>
                   <div className="desc">
                     <p>
-                      <p>
-                        Unlock an affordable and flexible real estate journey.
-                        Enjoy property ownership through our streamlined
-                        one-window projects.
-                      </p>
+                      Unlock an affordable and flexible real estate journey.
+                      Enjoy property ownership through our streamlined
+                      one-window projects.
                     </p>
                     1. Sign-in <br /> 2. Invest <br /> 3. Monitor progress
                     <p></p>
