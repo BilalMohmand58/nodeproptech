@@ -3,7 +3,7 @@
 /*	Copyright (c) 2022 Frenify
 /*	Author: Frenify
 /*	This file is made for CURRENT TEMPLATE
-/* .fn_title2
+/* neoh_fn_modal
 	01) Base
 
 /*------------------------------------------------------------------*/
@@ -2922,6 +2922,7 @@ a.full_link{
     transition: all 0.3s ease;
 	transform: scale(0.9) translateY(-250px);
 	padding: 40px;
+	margin-top: 50px;
 /*	opacity: 1;*/
 /*	visibility: visible;*/
 /*	transform: none;*/
@@ -2954,12 +2955,12 @@ a.full_link{
 	display: block;
 	width: 100%;
 	height: 100%;
-	background-color: #525252;
+	background-color: #333;
 	border-radius: 5px 5px 0 0;
 	color: #aaa;
 }
 .neoh_fn_modal .modal_closer a:hover{
-	background-color: #333;
+	background-color: #2e2e2e;
 	color: #eee;
 }
 .neoh_fn_modal .modal_in{
@@ -2975,7 +2976,7 @@ a.full_link{
 	width: 100%;
 	clear: both;
 	position: relative;
-	overflow-y: scroll;
+	/* overflow-y: scroll; */
 	overflow-x: hidden;
 	max-height: 90vh;
 	max-height: calc(100vh - 80px);

@@ -1,44 +1,18 @@
 import { Fragment, useState } from "react";
 import Timeline from "./Timeline";
 import ProductPopup from "./popup/ProductPopup";
+import { dropData } from "@/pages/api/dropData";
 
 const Drops = () => {
   const [toggle, setToggle] = useState(false);
   const [data, setData] = useState({ img: "", title: "" });
-  const dropData = [
-    {
-      img: "img/drops/1.jpeg",
-      title: "Blockchain",
-      dec: "Our blockchain technology ensures transparency, security, and efficiency in real estate transactions, reducing fraud and optimizing property records.",
-    },
-    {
-      img: "img/drops/2.jpeg",
-      title: "IOT (Internet of Things)",
-      dec: "We offer smart solutions for property management, enhancing operational efficiency, reducing costs, and providing a seamless tenant experience",
-    },
-    {
-      img: "img/drops/3.jpeg",
-      title: "FinTech",
-      dec: "NodePropTech combines financial technology and real estate to empower investors with sustainable and profitable choices, redefining how real estate is financed and managed.",
-    },
-    {
-      img: "img/drops/4.jpeg",
-      title: "PropTech",
-      dec: "Our PropTech solutions simplify property transactions, making buying, selling, and managing properties more accessible and efficient for everyone",
-    },
-    {
-      img: "img/drops/5.png",
-      title: "Sustainable Lifestyle",
-      dec: "We promote eco-friendly practices in real estate, supporting sustainability goals and reducing the environmental footprint of properties.",
-    },
-  ];
 
   const onClick = (value) => {
     setData(dropData[value - 1]);
     setToggle(true);
   };
 
-  const { img, title, dec } = data;
+  const { img, title, dec, slug } = data;
 
   return (
     <Fragment>
@@ -48,6 +22,7 @@ const Drops = () => {
         img={img}
         dec={dec}
         title={title}
+        slug={slug}
       />
       {/* Drops Section */}
       <section id="drop">
