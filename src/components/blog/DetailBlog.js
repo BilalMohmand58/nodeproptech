@@ -138,7 +138,9 @@ const DetailBlog = ({ blog }) => {
                     <div className="afwa_title">
                       <h3>Node PropTech</h3>
                       <p>
-                        <a href="info@themaidaan.com">info@themaidaan.com</a>
+                        <a href="info@nodeproptech.com">
+                          info@nodeproptech.com
+                        </a>
                       </p>
                     </div>
                     <div className="afwa_desc">

@@ -1,6 +1,7 @@
+import Link from "next/link";
 import { Fragment } from "react";
 import { IoMdClose } from "react-icons/io";
-const ProductPopup = ({ open, close, img, title, dec }) => {
+const ProductPopup = ({ open, close, img, title, dec, slug }) => {
   return (
     <Fragment>
       <div className={`neoh_fn_modal product_modal ${open ? "opened" : ""}`}>
@@ -27,28 +28,11 @@ const ProductPopup = ({ open, close, img, title, dec }) => {
                   <p>{dec}</p>
                 </div>
                 <div className="buttons">
-                  <a
-                    href="/product"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="neoh_fn_button opensea"
-                  >
-                    <span className="icon">
-                      <img src="svg/opensea.svg" alt="" className="fn__svg" />
-                    </span>
-                    <span className="text">Our Products</span>
-                  </a>
-                  <a
-                    href="/product"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="neoh_fn_button discord disable"
-                  >
-                    <span className="icon">
-                      <img src="svg/discord.svg" alt="" className="fn__svg" />
-                    </span>
-                    <span className="text">Our Products</span>
-                  </a>
+                  <Link legacyBehavior href={`product/${slug}`}>
+                    <a className="neoh_fn_button only_text">
+                      <span className="text">Product Details</span>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
