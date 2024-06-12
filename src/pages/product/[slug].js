@@ -1,12 +1,17 @@
 import Layout from "@/layout/Layout";
 import Link from "next/link";
-import { useParams } from "next/navigation";
+import { useRouter } from "next/router";
 import { dropData } from "../api/dropData";
 
 const ProductDetails = ({}) => {
-  const { slug } = useParams(); // Destructure slug directly from useParams
+  const router = useRouter();
+  const { slug } = router.query;
+  // console.log("Params:", slug); // Debugging
 
-  console.log("Params:", slug); // Debugging
+  if (!slug) {
+    // If slug is not available, render null to prevent further errors
+    return null;
+  }
 
   const dropItem = dropData.find((item) => item.slug === slug);
 
@@ -237,3 +242,29 @@ const ProductDetails = ({}) => {
 };
 
 export default ProductDetails;
+
+// import Layout from "@/layout/Layout";
+// import Link from "next/link";
+// import { useParams } from "next/navigation";
+// import { dropData } from "../api/dropData";
+
+// const ProductDetails = ({}) => {
+//   const { slug } = useParams(); // Destructure slug directly from useParams
+
+//   console.log("Params:", slug); // Debugging
+
+//   const dropItem = dropData.find((item) => item.slug === slug);
+
+//   if (!dropItem) {
+//     return <div>Portfolio item not found!</div>;
+//   }
+
+//   const { title, banner, details } = dropItem;
+//   return (
+//     <>
+
+//     </>
+//   );
+// };
+
+// export default ProductDetails;
