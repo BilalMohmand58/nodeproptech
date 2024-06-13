@@ -65,11 +65,6 @@ const ProductDetails = ({}) => {
                   {/* Single Title */}
                   <div className="single_title">
                     <h2 className="fn_title">{title}</h2>
-                    <div className="content_item">
-                      <div className="line">
-                        <span />
-                      </div>
-                    </div>
 
                     {/* <div className="categories">
                       <a href="/">Technology</a>, <a href="/">Node</a>,{" "}
@@ -83,9 +78,9 @@ const ProductDetails = ({}) => {
 
                   <div className="neoh_fn_title">
                     {/* <h3 className="fn_title">Our Latest Drops</h3> */}
-                    <div className="line">
+                    {/* <div className="line">
                       <span />
-                    </div>
+                    </div> */}
                   </div>
                   <div className="t_item_info">
                     <br />
@@ -105,22 +100,13 @@ const ProductDetails = ({}) => {
                         <div className="neoh_fn_gallery_1_2">
                           <div className="gallery_in">
                             <div className="item row2">
-                              <img
-                                src="https://images.ctfassets.net/jyd9wciqks30/3Vi9iwqkPGgMZ4PGkFDEJW/171b35977dc163ad0a7c933302bb7d1d/modern-city-concept-3d-illustration-form-circle.jpg"
-                                alt=""
-                              />
+                              <img src="../../img/drops/01.jpg" alt="" />
                             </div>
                             <div className="item">
-                              <img
-                                src="https://images.ctfassets.net/jyd9wciqks30/6hcKsHTBIdkUUQowfAh05z/b41a22dd2f34b79417457229d95f7b11/3d-cryptocurrency-rendering-design.jpg"
-                                alt=""
-                              />
+                              <img src="../../img/drops/02.jpg" alt="" />
                             </div>
                             <div className="item">
-                              <img
-                                src="https://images.ctfassets.net/jyd9wciqks30/26YGPRQNG5v8wcXVVt2dKy/3e3be9818ed1ca4df958bd4c140cc5bf/ai-cloud-concept-with-robot-arm.jpg"
-                                alt=""
-                              />
+                              <img src="../../img/drops/03.jpg" alt="" />
                             </div>
                           </div>
                         </div>
