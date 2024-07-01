@@ -153,7 +153,7 @@ const Header = () => {
           <div className="header_in">
             <div className="logo-img">
               <a href="/" rel="noreferrer">
-                <img src="img/logo.png" alt="" />
+                <img src="/img/logo.png" alt="" />
               </a>
             </div>
             <div className="trigger">
