@@ -1,29 +1,36 @@
-import Layout from "@/layout/Layout";
-import AboutComponent from "@components/AboutComponent";
-import BlogComponent from "@components/BlogComponent";
-import Drops from "@components/Drops";
-import KendurnsHero from "@components/KendurnsHero";
-import ServicesComponent from "@components/ServicesComponent";
-import WhyChooseUsComponent from "@components/WhyChooseUsComponent";
+// import Layout from "@/layout/Layout";
+// import AboutComponent from "@components/AboutComponent";
+// import BlogComponent from "@components/BlogComponent";
+// import Drops from "@components/Drops";
+// import KendurnsHero from "@components/KendurnsHero";
+// import ServicesComponent from "@components/ServicesComponent";
+// import WhyChooseUsComponent from "@components/WhyChooseUsComponent";
+
+// const Kenburns = () => {
+//   return (
+//     <Layout pageName={"Home Kenburns"}>
+//       <KendurnsHero />
+//       {/* !Hero Header */}
+//       {/* About Section */}
+//       <AboutComponent />
+//       {/* !About Section */}
+//       {/* Services Section */}
+//       <ServicesComponent />
+//       {/* !Services Section */}
+//       {/* <Drops /> */}
+//       {/* Investor Section */}
+//       <WhyChooseUsComponent />
+//       {/* !Investor Section */}
+//       {/* Blog Section */}
+//       <BlogComponent />
+//     </Layout>
+//   );
+// };
+// export default Kenburns;
+import React from "react";
 
 const Kenburns = () => {
-  return (
-    <Layout pageName={"Home Kenburns"}>
-      <KendurnsHero />
-      {/* !Hero Header */}
-      {/* About Section */}
-      <AboutComponent />
-      {/* !About Section */}
-      {/* Services Section */}
-      <ServicesComponent />
-      {/* !Services Section */}
-      {/* <Drops /> */}
-      {/* Investor Section */}
-      <WhyChooseUsComponent />
-      {/* !Investor Section */}
-      {/* Blog Section */}
-      <BlogComponent />
-    </Layout>
-  );
+  return <div>Kenburns</div>;
 };
+
 export default Kenburns;
