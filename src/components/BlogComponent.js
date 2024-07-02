@@ -6,11 +6,11 @@ const BlogComponent = ({ posts }) => {
     <>
       <section id="services">
         {/* Dividers */}
-        <img
+        {/* <img
           src="svg/divider.png"
           alt=""
           className="fn__svg fn__divider top_divider"
-        />
+        /> */}
         <img
           src="svg/divider.png"
           alt=""

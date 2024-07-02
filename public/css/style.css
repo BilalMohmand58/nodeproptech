@@ -4918,3 +4918,8 @@ letter-spacing: 5px;
 		padding: 15px;
 	}
 }
+@media (max-width: 320px) {
+  .neoh_fn_timeline .t_item {
+    padding: 15px;
+  }
+}
