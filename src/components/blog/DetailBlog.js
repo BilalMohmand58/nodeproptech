@@ -26,6 +26,7 @@ const DetailBlog = ({ blog }) => {
       <Head>
         <title>{title}</title>
         <meta name="description" content={shortDiscription} />
+        <meta property="og:image" content={image?.fields?.file?.url} />
       </Head>
       <div className="neoh_fn_blog_single neoh_fn_single">
         {/* Single Background */}
@@ -103,10 +104,10 @@ const DetailBlog = ({ blog }) => {
                 {/* Single Title */}
                 <div className="single_title">
                   <h2 className="fn_title">{title}</h2>
-                  <div className="categories">
+                  {/* <div className="categories">
                     <a href="/">Technalogy</a>, <a href="/">Node</a>,{" "}
                     <a href="/">Property</a>
-                  </div>
+                  </div> */}
                 </div>
                 {/* !Single Title */}
                 {/* Single Description */}
@@ -116,7 +117,7 @@ const DetailBlog = ({ blog }) => {
                 {/* !Single Description */}
                 {/* Tags */}
                 <br />
-                <div className="neoh_fn_tags">
+                {/* <div className="neoh_fn_tags">
                   <h4 className="label">Tags:</h4>
                   <a href="#">nodeprop</a>
                   <span>,</span>
@@ -125,7 +126,7 @@ const DetailBlog = ({ blog }) => {
                   <a href="#">technalogy</a>
                   <span>,</span>
                   <a href="#">property</a>
-                </div>
+                </div> */}
                 {/* !Tags */}
               </div>
               {/* !Left Sidebar */}
