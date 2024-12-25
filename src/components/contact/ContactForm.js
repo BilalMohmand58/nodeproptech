@@ -104,7 +104,7 @@ const ContactForm = () => {
                       id="number"
                       name="number"
                       type="text"
-                      placeholder="(+92) 30*-***-****"
+                      placeholder="(320) 542-0129"
                       required
                     />
                   </li>

@@ -17,7 +17,7 @@ const AboutComponent = () => {
             </div>
             <div className="desc">
               <h5>
-                Pakistan’s Premier Hub for Transparent Real Estate Investment!
+                Premier Hub for Transparent Real Estate Investment!
               </h5>
               <h6>
                 <b>

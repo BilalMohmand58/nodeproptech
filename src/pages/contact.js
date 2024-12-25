@@ -19,7 +19,7 @@ const Contact = () => {
         <PageBanner
           pageName={"Contact"}
           pagetext={
-            "Open the Door to Node, Pakistan’s Top Digital Real Estate Hub"
+            "Open the Door to Node, Top Digital Real Estate Hub"
           }
           pagetext2={
             "Fill out the form below, and our team will contact you immediately"
