@@ -188,7 +188,7 @@ const Hero = () => {
             <h3 className="fn_title2">PropTech</h3>
 
             <p className="fn_desc fn_animated_text">
-              Transforming global real estate through advanced DLT, web 3 &
+              Transforming global real estate through advanced DLT, web 3 and
               blockchain technology for transparent investments.
             </p>
           </div>
