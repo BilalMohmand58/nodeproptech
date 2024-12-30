@@ -204,7 +204,7 @@ const Hero = () => {
               backgroundColor: 'rgba(255, 255, 255, 0.1)',
               backdropFilter: 'blur(10px)',
               WebkitBackdropFilter: 'blur(10px)',
-              boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+              // boxShadow: '0 8px 32px 0 rgba(17, 20, 61, 0.37)',
               borderRadius: '8px',
             }}
           >
