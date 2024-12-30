@@ -93,7 +93,7 @@ input[type="text"]{
 	font-size: 16px;
 	letter-spacing: 0;
 	line-height: 46px;
-	height: 50px;
+	/* height: 50px; */
 	padding: 0 15px;
 }
 textarea{
@@ -367,11 +367,11 @@ a.full_link{
 	align-items: flex-start;
 }
 .neoh_fn_hero.half .hero_content{
-	width: 50%;
+	width: 100%;
 	background-color: #0a0a0a;
 }
 .neoh_fn_hero.half .bg_overlay{
-	left: 50%;
+	/* left: 50%; */
 }
 
 .neoh_fn_hero .hero_content{
@@ -394,8 +394,13 @@ a.full_link{
 	-ms-align-items: center;
 	align-items: center;
 }
-.neoh_fn_hero .content{
+/* .neoh_fn_hero .content{
 	text-align: center;
+} */
+@media(max-width: 850px){
+	.neoh_fn_hero .content{
+		text-align: center;
+	}
 }
 @font-face {
 	font-family: neon;
@@ -429,14 +434,16 @@ a.full_link{
 	transform: translateZ(0);
 	overflow: hidden;
 	position: relative;
-	left: 17px;  /* because of letter spacing, if you change letter spacing, don't forget to change its value also */
+	 /* because of letter spacing, if you change letter spacing, don't forget to change its value also */
 }
 .neoh_fn_hero .fn_desc{
 	padding: 0;
 	font-size: 24px;
 	line-height: 1.3333;
-	max-width: 500px;
+	max-width: 700px;
 	margin: 0 auto;
+	margin-right: 10%;
+	margin-bottom: 5%;
 }
 .neoh_fn_down{
 	position: absolute;
