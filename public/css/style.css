@@ -293,6 +293,46 @@ a.full_link{
 .trigger_in .text{
 	line-height: 1;
 }
+
+/* desktop navbar */
+.nav_menu1 ul {
+	display: flex; /* Ensures the list items are displayed inline */
+	list-style: none; /* Removes bullet points */
+	padding: 0;
+	margin: 0;
+  }
+  
+  .nav_menu1 ul li {
+	margin: 0 10px; /* Adds spacing between items */
+  }
+  
+  .nav_menu1 ul li a {
+	font-size: 23px;
+    /* font-family: var(--hff); */
+	text-decoration: none;
+	color: white;
+	transition: color 0.3s ease;
+  }
+  
+  .nav_menu1 ul li a:hover {
+	color: #00DDD2; /* Optional: Add a hover effect color */
+  }
+  @media (min-width: 1000px) {
+	.trigger_in{
+	  display: none; 
+	}
+  }
+  
+  @media (max-width: 1000px) {
+	.neoh_fn_nav2 {
+	  display: none; /* Hides the menu on screens smaller than 100px */
+	}
+  }
+  
+
+
+
+
 /*------------------------------------------------------------------*/
 /*	xx) Hero Header
 /*------------------------------------------------------------------*/
@@ -425,7 +465,7 @@ a.full_link{
 	max-width: 700px;
 	margin: 0 auto;
 	padding: 0;
-	font-size: 60px;
+	font-size: 40px;
 	text-transform: uppercase;
 	letter-spacing: 25px; /* after changing this value, don't forget to change left value */
 	line-height: 1;
@@ -993,9 +1033,9 @@ a.full_link{
 
 }
 .neoh_fn_drops li{
-	width: 45.3333%;
-	padding-left: 20px;
-	padding-right: 20px;
+	width: 22.3333%;
+	padding-left: 10px;
+	padding-right: 10px;
 	margin-bottom: 40px;
 }
 .neoh_fn_drops .item{
@@ -2420,11 +2460,13 @@ a.full_link{
 /* Section Information */
 #information{
 	padding: 150px 0;
+	padding-bottom: 50px;
+
 	background-color: #111;
 }
 /* Guarantee List */
 .neoh_fn_gualist{
-	margin-bottom: 105px;
+	/* margin-bottom: 105px; */
 }
 .neoh_fn_gualist ul{
 	display: -webkit-flex;
@@ -4540,7 +4582,7 @@ a.full_link{
 /* Responsive */
 @media(max-width: 1500px){
 	.neoh_fn_drops li{
-		width: 50%;
+		width: 25%;
 	}
 }
 @media(min-width: 1500px){
@@ -4599,7 +4641,7 @@ a.full_link{
 		
 	}
 	.neoh_fn_hero .fn_title2{
-		font-size: 50px;
+		font-size: 40px;
 		
 	}
 	.neoh_fn_about_item .img_item{
@@ -4916,7 +4958,7 @@ letter-spacing: 5px;
 	}
 	.mw_500{width:310px;}
 	.neoh_fn_hero .fn_title2{		
-		font-size: 40px;
+		font-size: 20px;
 		letter-spacing: 15px;
 	}
 }

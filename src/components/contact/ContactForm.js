@@ -14,7 +14,7 @@ const initState = {
   isLoading: false,
   error: "",
   success: false,
-  values: initValues,
+  values: initValues, 
 };
 
 const ContactForm = () => {
@@ -58,7 +58,7 @@ const ContactForm = () => {
   }, [success, error]);
 
   return (
-    <div className="container">
+    <div className="container" style={{ marginTop: "50px" }}>
       <div className="neoh_fn_gualist1">
         <div className="item">
           <span className="line" />

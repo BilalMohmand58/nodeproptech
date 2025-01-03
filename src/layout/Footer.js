@@ -18,8 +18,9 @@ const Footer = () => {
                 </div>
                 <h3 className="fn_title">Join Now For Early Access</h3>
                 <p className="fn_desc">
-                  Make an Informed Real Estate Decision Today Sign up and
-                  witness your real estate wealth grow with Node Solutions.
+                Make an Informed Real Estate Decision Today!<br/>
+Sign up and witness your real estate wealth grow with Node Solutions.
+
                 </p>
               </div>
               <SubscribeForm />

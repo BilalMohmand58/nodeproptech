@@ -1,3 +1,4 @@
+import FeatureComponent from "@/components/FeatureComponent";
 import ProductServices from "@/components/ProductServices";
 import { getMetadata } from "@/config/metadata";
 import Layout from "@/layout/Layout";
@@ -25,7 +26,7 @@ const Product = () => {
         <PageBanner
           pageName={"Product"}
           pagetext={
-            " Find the perfect path to owning premium real estate with just a click."
+            " Discover our cutting-edge DLT and Web3 technology services, revolutionizing real estate with transparency, security, and innovation."
           }
           // pagetext2={
           //   "Fill out the form below, and our team will contact you immediately"
@@ -36,9 +37,11 @@ const Product = () => {
         {/* !About Section */}
 
         <Drops />
-
+ {/* Featue Section */}
+ <FeatureComponent />
+        {/* !Featue Section */}
         {/* Services Section */}
-        <ProductServices />
+        {/* <ProductServices /> */}
         {/* !Services Section */}
         {/* Investor Section */}
         {/* <WhyChooseUsComponent /> */}

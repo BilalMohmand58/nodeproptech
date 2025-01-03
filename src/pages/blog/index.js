@@ -33,8 +33,8 @@ const Blog = ({ posts }) => {
       <Layout pageName={"Blog"}>
         <PageBanner
           pageName={"Blog"}
-          pagetext={"Set Sail Towards Your Property Success Today "}
-          pagetext2={" Join us to get started."}
+          pagetext={"Explore our blogs for insights, trends, and expert advice on transforming real estate with innovation and technology. "}
+          pagetext2={""}
         />
         <div className="neoh_fn_blog_page">
           <BlogCard posts={posts} />

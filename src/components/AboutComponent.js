@@ -10,43 +10,40 @@ const AboutComponent = () => {
           </div>
           <div className="content_item">
             <div className="neoh_fn_title" data-align="left">
-              <h3 className="fn_title">Node Proptech</h3>
+              <h3 className="fn_title">Who are we?</h3>
               <div className="line">
                 <span />
               </div>
             </div>
             <div className="desc">
               <h5>
-                Premier Hub for Transparent Real Estate Investment!
+              Node Proptech is a forward-thinking company in the dynamic real estate sector.
               </h5>
-              <h6>
+              {/* <h6>
                 <b>
                   Invest securely and start with any amount you desire. Begin
                   your journey now.
                 </b>{" "}
-              </h6>
+              </h6> */}
               <p>
-                • Valid Projects: Certified, verified, and validated projects.
-                Licensed and NOC-approved for a positive experience. <br /> •
-                Friendly Prices: Transparent and competitive pricing with no
-                hidden charges. <br /> • Powered by Blockchain: Secure,
-                transparent, and verifiable transactions. <br /> • Customized
-                Plans: Whether buying, investing, managing, or seeking
-                commissions, Node has you covered.
+              We use <b>Web 3</b>  via <b>Distributed Ledger Technology (DLT) </b> to revolutionize how we perceive, assess, and authenticate property investments. Our goal is to democratize and decentralize real estate, removing barriers and creating opportunities for global investors. 
+
+Our unique platform enables the fractionalization of real estate, making transparent investment accessible to everyone, regardless of their financial capacity. We believe in blockchain's transformative potential to bring trust and transparency to the real estate industry. 
+
               </p>
             </div>
             <div className="buttons">
               <Link legacyBehavior href="/about">
                 <a className="neoh_fn_button only_text">
-                  <span className="text">About Us</span>
+                  <span className="text">Read more</span>
                 </a>
               </Link>
 
-              <Link legacyBehavior href="/blog">
+              {/* <Link legacyBehavior href="/blog">
                 <a className="neoh_fn_button only_text">
                   <span className="text">Our Blogs</span>
                 </a>
-              </Link>
+              </Link> */}
 
               {/* <a
                 href="/blog"

@@ -2,7 +2,7 @@ const ServicesComponent = () => {
   return (
     <section id="services">
       {/* Dividers */}
-      <img
+      {/* <img
         src="svg/divider.png"
         alt=""
         className="fn__svg fn__divider top_divider"
@@ -11,87 +11,69 @@ const ServicesComponent = () => {
         src="svg/divider.png"
         alt=""
         className="fn__svg fn__divider bottom_divider"
-      />
+      /> */}
       {/* !Dividers */}
       <div className="container">
         {/* Main Title */}
         <div className="neoh_fn_title">
-          <h3 className="fn_title">Features</h3>
+          <h3 className="fn_title">
+            From Paperwork to Web3’s Blockchain Revolution!
+          </h3>
           <div className="line">
             <span />
           </div>
         </div>
         {/* !Main Title */}
         {/* Services */}
-        <div className="neoh_fn_services">
+        <div className="neoh_fn_gualist">
           <ul>
-            <li>
+            <li className="servicesessionli" style={{ width: "50%" }}>
               <div className="item">
-                <div className="item_num">
-                  <span>01</span>
-                </div>
-                <div className="item_content">
-                  <h3 className="fn_title"> Streamlined Efficiency</h3>
-                  <p className="fn_desc fn_animated_text">
-                    Node PropTech is leveraging the latest advancements to make
-                    property management and investment easier, Simplifying
-                    complex processes, automating tasks,Centralizing data to
-                    allow to manage real estate portfolio.
-                  </p>
-                </div>
+                <span className="line" />
+
+                {/* <img
+                               src="svg/management.svg"
+                               alt=""
+                               className="fn__svg"
+                             /> */}
+                {/* <h3 className="fn_title">Our Vision </h3> */}
+                <p className="fn_desc fn_animated_text">
+                  In the past, real estate transactions involved mountains of
+                  paperwork, extensive negotiations, and frustrating delays.
+                  Buyers, sellers, and intermediaries shuffled through stacks of
+                  documents, increasing the risk of errors and fraud. The
+                  process was arduous, time-consuming, and often left parties
+                  feeling uncertain about the deal's transparency.
+                </p>
               </div>
             </li>
-            <li>
+            <li className="servicesessionli" style={{ width: "50%" }}>
               <div className="item">
-                <div className="item_num">
-                  <span>02</span>
-                </div>
-                <div className="item_content">
-                  <h3 className="fn_title">Data-Driven Insights</h3>
-                  <p className="fn_desc fn_animated_text">
-                    Offering powerful analytics and data visualization tools
-                    that provide actionable insights into your real estate
-                    assets. Make informed decisions, identify trends, and
-                    optimize your property portfolio for maximum returns..
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="item">
-                <div className="item_num">
-                  <span>03</span>
-                </div>
-                <div className="item_content">
-                  <h3 className="fn_title"> Exceptional support</h3>
-                  <p className="fn_desc fn_animated_text">
-                    Our dedicated customer support team is here to assist you
-                    every step of the way. Whether you have questions, need
-                    assistance, or encounter issues, we're committed to
-                    providing responsive and helpful support. Rest assured, your
-                    satisfaction is our top priority.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="item">
-                <div className="item_num">
-                  <span>04</span>
-                </div>
-                <div className="item_content">
-                  <h3 className="fn_title">Proven Track Records</h3>
-                  <p className="fn_desc fn_animated_text">
-                    With a history of success and satisfied clients, we have a
-                    strong track record in the prop-tech industry. Joining us
-                    means aligning with a trusted partner who can help you
-                    achieve your property management and investment goals.
-                  </p>
-                </div>
+                <span className="line" />
+
+                {/* <img src="svg/discord.svg" alt="" className="fn__svg" /> */}
+                {/* <h3 className="fn_title">Our Values</h3> */}
+                <p className="fn_desc fn_animated_text">
+                  Our forward-thinking approach leverages blockchain technology,
+                  smart contracts, and decentralized applications to ensure
+                  transparency, security, and efficiency in every aspect of real
+                  estate management. From property listings to transactions, our
+                  platform harnesses the true power of Web 3.0, enabling a
+                  seamless and decentralized experience for our valued clients.
+                </p>
               </div>
             </li>
           </ul>
         </div>
+        <style jsx>
+          {`
+            @media (max-width: 700px) {
+              .servicesessionli {
+                width: 100% !important;
+              }
+            }
+          `}
+        </style>
         {/* !Services */}
       </div>
     </section>

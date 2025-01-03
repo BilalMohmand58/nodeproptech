@@ -88,24 +88,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <div className="nav_buttons">
-            <a
-              href="https://opensea.io/"
-              className="neoh_fn_button"
-              target="_blank"
-            >
-              <span className="icon">
-                <img src="svg/opensea.svg" alt="" className="fn__svg" />
-              </span>
-              <span className="text">OpenSea</span>
-            </a>
-            <a href="/" className="neoh_fn_button" target="_blank">
-              <span className="icon">
-                <img src="svg/discord.svg" alt="" className="fn__svg" />
-              </span>
-              <span className="text">Discord</span>
-            </a>
-          </div>
+        
         </div>
         {/* Nav Footer */}
         <div className={`nav_footer ${toggle ? "ready" : ""}`}>
@@ -156,6 +139,42 @@ const Header = () => {
                 <img src="/img/logo.png" alt="" />
               </a>
             </div>
+{/* desktop navbar */}
+<div className="neoh_fn_nav2" >
+  <div className="nav_content1">
+    <div className="nav_menu1">
+      <ul>
+        <li className="menu-item1">
+          <Link legacyBehavior href="/">
+            Home
+          </Link>
+        </li>
+        <li className="menu-item1">
+          <Link legacyBehavior href="/about">
+            About
+          </Link>
+        </li>
+        <li className="menu-item1">
+          <Link legacyBehavior href="/blog">
+            Blog
+          </Link>
+        </li>
+        <li>
+          <Link legacyBehavior href="/product">
+            Product
+          </Link>
+        </li>
+        <li className="menu-item1">
+          <Link legacyBehavior href="/contact">
+            Contact
+          </Link>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
             <div className="trigger">
               <div className="trigger_in" onClick={() => setToggle(!toggle)}>
                 {/* <span className="text">Menu</span> */}

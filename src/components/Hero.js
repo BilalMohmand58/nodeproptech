@@ -184,8 +184,8 @@ const Hero = () => {
           }}
         >
           <div className="content" style={{ paddingTop: '130px' }}>
-            <h2 className="fn_title2">Node</h2>
-            <h3 className="fn_title2">PropTech</h3>
+            <h5 className="fn_title2">Invest </h5>
+            <h4 className="fn_title2">Transparently</h4>
 
             <p className="fn_desc fn_animated_text">
               Transforming global real estate through advanced DLT, web 3 and

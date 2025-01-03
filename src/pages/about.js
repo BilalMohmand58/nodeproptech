@@ -1,3 +1,4 @@
+import WhyChooseus from "@/components/WhyChooseus";
 import { getMetadata } from "@/config/metadata";
 import Layout from "@/layout/Layout";
 import PageBanner from "@/layout/PageBanner";
@@ -35,18 +36,12 @@ const About = () => {
                   </div>
                   <div className="desc">
                     <p>
-                      Node PropTech started with the mission to empower
-                      transparency in real estate investment. Our goal was to
-                      revolutionize the industry through technology, ensuring
-                      financial freedom and trust-based investments for all.
-                      With a vision of a modern, tech-driven future, we launched
-                      Node PropTech to bring the entire real estate
-                      ecosystem—investors and developers—together
+                    At Node PropTech, we empower transparency in real estate investment via DLT technology. Our mission is to revolutionize the industry through technology, creating pathways to financial freedom and trust-based investments for everyone. Driven by a vision of a modern, tech-driven future, Node PropTech brings together the entire real estate ecosystem—investors and developers alike.
+
                     </p>
                     <p>
-                      Our unique platform enables fractional real estate
-                      ownership, from paperwork to Web3’s blockchain, ensuring
-                      security and efficiency in every aspect.
+                    Our innovative platform enables fractional real estate ownership, streamlining everything from paperwork to Web3’s blockchain integration. We ensure security, efficiency, and accessibility at every step, redefining how real estate investments are made in today's digital age.
+
                     </p>
                   </div>
                   <div className="buttons">
@@ -93,9 +88,8 @@ const About = () => {
                       /> */}
                       <h3 className="fn_title">Our Mission </h3>
                       <p className="fn_desc fn_animated_text">
-                        To revolutionize the real estate industry by leveraging
-                        our expertise and technologies, including blockchain,
-                        IoT, FinTech, PropTech, and sustainable living.
+                      To revolutionize the real estate industry by leveraging Web 3 and Digital Ledger Technology to streamline property management and enhance investment opportunities.
+
                       </p>
                     </div>
                   </li>
@@ -110,9 +104,8 @@ const About = () => {
                       /> */}
                       <h3 className="fn_title">Our Vision </h3>
                       <p className="fn_desc fn_animated_text">
-                        To make real estate investment accessible to all,
-                        breaking down barriers and fostering a more inclusive,
-                        interconnected investment world. Projects
+                      To create a future where real estate investment is accessible to all, breaking down barriers and fostering a more inclusive, interconnected investment world.
+
                       </p>
                     </div>
                   </li>
@@ -123,9 +116,8 @@ const About = () => {
                       {/* <img src="svg/discord.svg" alt="" className="fn__svg" /> */}
                       <h3 className="fn_title">Our Values</h3>
                       <p className="fn_desc fn_animated_text">
-                        Integrity, innovation, and inclusivity drive us to
-                        constantly improve and adapt, ensuring we meet the
-                        diverse needs of our community
+                      Integrity, innovation, and inclusivity drive us to continuously improve and adapt, ensuring we meet the diverse needs of our growing community.
+
                       </p>
                     </div>
                   </li>
@@ -133,7 +125,7 @@ const About = () => {
               </div>
               {/* !Guarantee List */}
               {/* About Item #2 */}
-              <div className="neoh_fn_about_item reverse">
+              {/* <div className="neoh_fn_about_item reverse">
                 <div className="img_item">
                   <img src="img/about/2.jpg" alt="" />
                 </div>
@@ -159,10 +151,12 @@ const About = () => {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
+              
               {/* !About Item #2 */}
             </div>
           </section>
+            <WhyChooseus />
           {/* !Information Section */}
           {/* Video Section */}
           {/* <section id="video">

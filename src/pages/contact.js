@@ -19,10 +19,10 @@ const Contact = () => {
         <PageBanner
           pageName={"Contact"}
           pagetext={
-            "Open the Door to Node, Top Digital Real Estate Hub"
+            "Let’s transform your real estate journey together!"
           }
           pagetext2={
-            "Fill out the form below, and our team will contact you immediately"
+            "Fill out the form below, and our team will reach out to you promptly."
           }
         />
 
@@ -45,8 +45,9 @@ const Contact = () => {
             </div>
           </div>
         </section> */}
-        <InfoContact />
+       
         <ContactForm />
+        <InfoContact />
       </Layout>
     </>
   );
