@@ -11,6 +11,7 @@ import { createClient } from "contentful";
 import Head from "next/head";
 import Hero from "@/components/Hero";
 import FeatureComponent from "@/components/FeatureComponent";
+import WhyOwnership from "@/components/WhyOwnership";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -50,7 +51,7 @@ const Index = ({ posts }) => {
         {/* Featue Section */}
         <FeatureComponent />
         {/* !Featue Section */}
-
+<WhyOwnership/>
         <Drops />
         <WhyChooseus />
         {/* Investor Section */}

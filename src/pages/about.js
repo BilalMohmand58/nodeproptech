@@ -1,4 +1,5 @@
 import WhyChooseus from "@/components/WhyChooseus";
+import WhyOwnership from "@/components/WhyOwnership";
 import { getMetadata } from "@/config/metadata";
 import Layout from "@/layout/Layout";
 import PageBanner from "@/layout/PageBanner";
@@ -156,7 +157,7 @@ const About = () => {
               {/* !About Item #2 */}
             </div>
           </section>
-            <WhyChooseus />
+          <WhyOwnership/>
           {/* !Information Section */}
           {/* Video Section */}
           {/* <section id="video">
