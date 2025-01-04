@@ -17,7 +17,15 @@ const BlogComponent = ({ posts }) => {
           className="fn__svg fn__divider bottom_divider"
         />
         {/* !Dividers */}
-        <div className="container" style={{ paddingTop: "30px" }}>
+        <div className="container">
+        <div className="neoh_fn_title" style={{ padding: "30px" }}>
+        <h3 className="fn_title" >
+        Our Latest Blogs{" "}
+        </h3>
+        <div className="line">
+          <span />
+        </div>
+      </div>
           {/* Moving Blog List Shortcode */}
           <div className="neoh_fn_moving_blog">
             <ul>
