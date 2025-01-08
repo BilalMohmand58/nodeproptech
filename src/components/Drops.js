@@ -226,12 +226,14 @@ const Drops = () => {
 
                   <div className="title_holder" style={{ textAlign: "center" }}>
                     <h3 className="fn_title">Blockchain</h3>
-                    Our blockchain technology ensures transparency, security, and efficiency in real estate transactions. 
+                    <p className="fn_animated_text">
+                    Our blockchain technology ensures transparency, security, and efficiency in real estate transactions.
+                    </p>
                     <div className="buttons">
                       <a
                         className="neoh_fn_button only_text "
                         id="dropbutton"
-                        style={{ display: "inline-block", marginTop: "20px" }}
+                        style={{ display: "inline-block" }}
                       >
                           <Link legacyBehavior href="product/blockchain">
                   
@@ -259,13 +261,13 @@ const Drops = () => {
                   </div>
                   <div className="title_holder" style={{ textAlign: "center" }}>
                     <h3 className="fn_title">IOT (Internet of Things)</h3>
-                    We offer smart solutions for property management, enhancing operational efficiency.
-
+                    <p className="fn_animated_text">We offer smart solutions for property management, enhancing operational efficiency.
+</p>
                     <div className="buttons">
                       <a
                         className="neoh_fn_button only_text "
                         id="dropbutton"
-                        style={{ display: "inline-block", marginTop: "20px" }}
+                        style={{ display: "inline-block"}}
                       >
                           <Link legacyBehavior href="product/iot-internet-of-things">
                   
@@ -293,13 +295,13 @@ const Drops = () => {
 
                   <div className="title_holder" style={{ textAlign: "center" }}>
                     <h3 className="fn_title">FinTech</h3>
-                    NodePropTech combines financial technology and real estate to empower investors profitable choices.
-
+                    <p className="fn_animated_text">    NodePropTech combines financial technology and real estate to empower investors profitable choices.
+</p>
                     <div className="buttons">
                       <a
                         className="neoh_fn_button only_text "
                         id="dropbutton"
-                        style={{ display: "inline-block", marginTop: "20px" }}
+                        style={{ display: "inline-block"}}
                       >
                           <Link legacyBehavior href="product/fintech">
                   
@@ -327,12 +329,12 @@ const Drops = () => {
 
                   <div className="title_holder" style={{ textAlign: "center" }}>
                     <h3 className="fn_title">PropTech</h3>
-                    Our PropTech solutions simplify property transactions, making buying and selling.
+                    <p className="fn_animated_text">  Our PropTech solutions simplify property transactions, making buying and selling.</p>
                     <div className="buttons">
                       <a
                         className="neoh_fn_button only_text "
                         id="dropbutton"
-                        style={{ display: "inline-block", marginTop: "20px" }}
+                        style={{ display: "inline-block"}}
                       >
                           <Link legacyBehavior href="product/proptech">
                   

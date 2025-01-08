@@ -94,7 +94,7 @@ const WhyChooseus = () => {
               <span className="line" />
               <FaShieldAlt color="#00DDD2" className="fn__svg" />
               <h3 className="fn_title">Distributed Ledger Security</h3>
-              <p className="fn_desc ">
+              <p className="fn_desc fn_animated_text ">
                 Implement the foundational blockchain system to ensure all
                 transactions are transparent, verifiable, and immutable.
               </p>
@@ -105,7 +105,7 @@ const WhyChooseus = () => {
               <span className="line" />
               <BsHouseDoor color="#00DDD2" className="fn__svg" />
               <h3 className="fn_title">Fractional Property Listing</h3>
-              <p className="fn_desc ">
+              <p className="fn_desc fn_animated_text ">
                 Property owners can list their real estate for fractional
                 investment. This can be a limited selection, to begin with, to
                 test the waters.
@@ -117,7 +117,7 @@ const WhyChooseus = () => {
               <span className="line" />
               <FaExchangeAlt color="#00DDD2" className="fn__svg" />
               <h3 className="fn_title">Property Tokenization</h3>
-              <p className="fn_desc ">
+              <p className="fn_desc fn_animated_text ">
                 Implement the initial framework to convert listed properties
                 into tradable tokens, enabling fractional ownership.
               </p>
@@ -128,7 +128,7 @@ const WhyChooseus = () => {
               <span className="line" />
               <RiSecurePaymentFill color="#00DDD2" className="fn__svg" />
               <h3 className="fn_title">Smart Contract Introduction</h3>
-              <p className="fn_desc ">
+              <p className="fn_desc fn_animated_text ">
                 A basic version of smart contracts to ensure that property
                 transactions are automatically, transparently, and securely
                 handled.
@@ -140,7 +140,7 @@ const WhyChooseus = () => {
               <span className="line" />
               <AiOutlineCloudSync color="#00DDD2" className="fn__svg" />
               <h3 className="fn_title">Streamlined Efficiency</h3>
-              <p className="fn_desc ">
+              <p className="fn_desc fn_animated_text ">
                 Making property management and investment easier by simplifying
                 complex processes, automating tasks, and centralizing data.
               </p>
@@ -151,7 +151,7 @@ const WhyChooseus = () => {
               <span className="line" />
               <HiOutlineChartBar color="#00DDD2" className="fn__svg" />
               <h3 className="fn_title">Data-Driven Insights</h3>
-              <p className="fn_desc ">
+              <p className="fn_desc fn_animated_text ">
                 Offering powerful analytics and data visualization tools to make
                 informed decisions and optimize your property portfolio for
                 maximum returns.

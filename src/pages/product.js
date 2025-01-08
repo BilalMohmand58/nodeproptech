@@ -1,5 +1,6 @@
 import FeatureComponent from "@/components/FeatureComponent";
 import ProductServices from "@/components/ProductServices";
+import WhyOwnership from "@/components/WhyOwnership";
 import { getMetadata } from "@/config/metadata";
 import Layout from "@/layout/Layout";
 import PageBanner from "@/layout/PageBanner";
@@ -38,6 +39,7 @@ const Product = () => {
 
         <Drops />
  {/* Featue Section */}
+ <WhyOwnership/>
  <FeatureComponent />
         {/* !Featue Section */}
         {/* Services Section */}
