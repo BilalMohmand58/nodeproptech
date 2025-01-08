@@ -226,7 +226,7 @@ const Drops = () => {
 
                   <div className="title_holder" style={{ textAlign: "center" }}>
                     <h3 className="fn_title">Blockchain</h3>
-                    <p className="fn_animated_text">
+                    <p className="">
                     Our blockchain technology ensures transparency, security, and efficiency in real estate transactions.
                     </p>
                     <div className="buttons">
@@ -261,7 +261,7 @@ const Drops = () => {
                   </div>
                   <div className="title_holder" style={{ textAlign: "center" }}>
                     <h3 className="fn_title">IOT (Internet of Things)</h3>
-                    <p className="fn_animated_text">We offer smart solutions for property management, enhancing operational efficiency.
+                    <p className="">We offer smart solutions for property management, enhancing operational efficiency.
 </p>
                     <div className="buttons">
                       <a
@@ -295,7 +295,7 @@ const Drops = () => {
 
                   <div className="title_holder" style={{ textAlign: "center" }}>
                     <h3 className="fn_title">FinTech</h3>
-                    <p className="fn_animated_text">    NodePropTech combines financial technology and real estate to empower investors profitable choices.
+                    <p className="">    NodePropTech combines financial technology and real estate to empower investors profitable choices.
 </p>
                     <div className="buttons">
                       <a
@@ -329,7 +329,7 @@ const Drops = () => {
 
                   <div className="title_holder" style={{ textAlign: "center" }}>
                     <h3 className="fn_title">PropTech</h3>
-                    <p className="fn_animated_text">  Our PropTech solutions simplify property transactions, making buying and selling.</p>
+                    <p className="">  Our PropTech solutions simplify property transactions, making buying and selling.</p>
                     <div className="buttons">
                       <a
                         className="neoh_fn_button only_text "

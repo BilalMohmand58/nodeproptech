@@ -32,7 +32,8 @@ const FeatureComponent = () => {
                 </div>
                 <div className="item_content">
                   <h3 className="fn_title">Developers </h3>
-                  <p className="fn_desc fn_animated_text">
+                  {/* <p className="fn_desc fn_animated_text"> */}
+                  <p className="fn_desc">
                     Node Proptech serves as the premier buyer, streamlining the
                     selling process through the power of Web 3, Distributed
                     Ledger Technology (DLT), blockchain, and fractionalization.
@@ -47,7 +48,7 @@ const FeatureComponent = () => {
                 </div>
                 <div className="item_content">
                   <h3 className="fn_title">Building Management </h3>
-                  <p className="fn_desc fn_animated_text">
+                  <p className="fn_desc">
                     Node Proptech's subsidiary performs tasks to ensure seamless
                     operations, supporting building management in maintaining
                     their assets.
@@ -62,7 +63,7 @@ const FeatureComponent = () => {
                 </div>
                 <div className="item_content">
                   <h3 className="fn_title"> Investor/Buyer </h3>
-                  <p className="fn_desc fn_animated_text">
+                  <p className="fn_desc">
                     Catering to investors and buyers seeking property
                     appreciation, comfortable living or rental units. With
                     fractional ownership, it is affordable to invest in
@@ -78,7 +79,7 @@ const FeatureComponent = () => {
                 </div>
                 <div className="item_content">
                   <h3 className="fn_title"> Realtors</h3>
-                  <p className="fn_desc fn_animated_text">
+                  <p className="fn_desc">
                     Node Proptech provides realtors with opportunities for
                     higher commissions, leveraging their innovative platform and
                     services.

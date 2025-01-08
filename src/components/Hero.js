@@ -190,7 +190,7 @@ const Hero = () => {
           <div className="content" style={{ paddingTop: '130px' }}>
             <h5 className="fn_title2">Invest</h5>
             <h4 className="fn_title2">Transparently</h4>
-            <p className="fn_desc fn_animated_text">
+            <p className="fn_desc">
               Transforming global real estate through advanced DLT, web 3 and
               blockchain technology for transparent investments.
             </p>

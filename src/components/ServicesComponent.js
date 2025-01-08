@@ -37,7 +37,7 @@ const ServicesComponent = () => {
                                className="fn__svg"
                              /> */}
                 {/* <h3 className="fn_title">Our Vision </h3> */}
-                <p className="fn_desc fn_animated_text">
+                <p className="fn_desc ">
                   In the past, real estate transactions involved mountains of
                   paperwork, extensive negotiations, and frustrating delays.
                   Buyers, sellers, and intermediaries shuffled through stacks of
@@ -53,7 +53,7 @@ const ServicesComponent = () => {
 
                 {/* <img src="svg/discord.svg" alt="" className="fn__svg" /> */}
                 {/* <h3 className="fn_title">Our Values</h3> */}
-                <p className="fn_desc fn_animated_text">
+                <p className="fn_desc ">
                   Our forward-thinking approach leverages blockchain technology,
                   smart contracts, and decentralized applications to ensure
                   transparency, security, and efficiency in every aspect of real
