@@ -9,9 +9,8 @@ const PageBanner = ({ pageName, pagetext, pagetext2 }) => {
       <div className="pt_content">
         <div className="container">
           <h3
-            className="fn_title fn_animated_text"
-            data-wait={1000}
-            data-speed={8}
+            className="fn_title "
+           
           >
             {pageName}
           </h3>

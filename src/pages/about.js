@@ -88,7 +88,7 @@ const About = () => {
                         className="fn__svg"
                       /> */}
                       <h3 className="fn_title">Our Mission </h3>
-                      <p className="fn_desc fn_animated_text">
+                      <p className="fn_desc ">
                       To revolutionize the real estate industry by leveraging Web 3 and Digital Ledger Technology to streamline property management and enhance investment opportunities.
 
                       </p>
@@ -104,7 +104,7 @@ const About = () => {
                         className="fn__svg"
                       /> */}
                       <h3 className="fn_title">Our Vision </h3>
-                      <p className="fn_desc fn_animated_text">
+                      <p className="fn_desc ">
                       To create a future where real estate investment is accessible to all, breaking down barriers and fostering a more inclusive, interconnected investment world.
 
                       </p>
@@ -116,7 +116,7 @@ const About = () => {
                       <CiCircleCheck color="#00DDD2" className="fn__svg  " />
                       {/* <img src="svg/discord.svg" alt="" className="fn__svg" /> */}
                       <h3 className="fn_title">Our Values</h3>
-                      <p className="fn_desc fn_animated_text">
+                      <p className="fn_desc ">
                       Integrity, innovation, and inclusivity drive us to continuously improve and adapt, ensuring we meet the diverse needs of our growing community.
 
                       </p>
@@ -204,7 +204,7 @@ const About = () => {
               </div>
             
               <div className="mw_650 fn_description">
-                <p className="fn_desc fn_animated_text">
+                <p className="fn_desc ">
                   The idea was born in London and rapidly became a borderless
                   vision - A team of Neoh with a background in computer
                   graphics, crypto, technology, and art.
